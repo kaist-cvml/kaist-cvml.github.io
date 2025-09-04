@@ -1,0 +1,352 @@
+// Data Management Utilities for KAIST CVML Website
+// This file provides functions to load and manage JSON data
+
+class DataManager {
+  constructor() {
+    this.cache = {
+      news: null,
+      publications: null,
+      people: null
+    };
+    this.loadPromises = {};
+  }
+
+  // Load JSON data with caching
+  async loadData(type) {
+    if (this.cache[type]) {
+      return this.cache[type];
+    }
+
+    if (this.loadPromises[type]) {
+      return this.loadPromises[type];
+    }
+
+    this.loadPromises[type] = this.fetchData(type);
+    try {
+      this.cache[type] = await this.loadPromises[type];
+      return this.cache[type];
+    } catch (error) {
+      delete this.loadPromises[type];
+      throw error;
+    }
+  }
+
+  // Fetch data from JSON files
+  async fetchData(type) {
+    try {
+      // Determine correct path based on current location
+      const isInSubdirectory = window.location.pathname.includes('/pages/');
+      const basePath = isInSubdirectory ? '../data/' : 'data/';
+
+      const response = await fetch(`${basePath}${type}.json`);
+      if (!response.ok) {
+        throw new Error(`Failed to load ${type} data: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error(`Error loading ${type} data:`, error);
+      // Return fallback data if JSON fails to load
+      return this.getFallbackData(type);
+    }
+  }
+
+  // Fallback data in case JSON files can't be loaded
+  getFallbackData(type) {
+    if (type === 'news') {
+      return {
+        news: [
+          {
+            id: "fallback001",
+            date: "2025-08-15",
+            content: "The paper \"<strong>3D-Aware Vision-Language Models Fine-Tuning with Geometric Distillation</strong>\" is accepted to <strong>EMNLP 2025 Findings</strong>.",
+            category: "publication",
+            featured: true
+          }
+        ]
+      };
+    } else if (type === 'publications') {
+      return {
+        publications: [
+          {
+            id: "fallback001",
+            title: "Sample Publication",
+            authors: ["Author, A.", "Prof. Name"],
+            venue: "Conference 2025",
+            year: 2025,
+            type: "conference",
+            status: "accepted"
+          }
+        ]
+      };
+    } else if (type === 'people') {
+      return {
+        people: [
+          {
+            id: "fallback001",
+            name: "Sample Person",
+            email: "person@example.com",
+            category: "phd",
+            position: "current",
+            title: "PhD Student",
+            year: "1st year"
+          }
+        ]
+      };
+    }
+    return {};
+  }
+
+  // Get news items with filtering and sorting
+  async getNews(options = {}) {
+    const data = await this.loadData('news');
+    let news = [...data.news];
+
+    // Filter by category
+    if (options.category) {
+      news = news.filter(item => item.category === options.category);
+    }
+
+    // Filter by featured
+    if (options.featured !== undefined) {
+      news = news.filter(item => item.featured === options.featured);
+    }
+
+    // Sort by date (newest first)
+    news.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    // Limit results
+    if (options.limit) {
+      news = news.slice(0, options.limit);
+    }
+
+    return news;
+  }
+
+  // Get publications with filtering and sorting
+  async getPublications(options = {}) {
+    const data = await this.loadData('publications');
+    let publications = [...data.publications];
+
+    // Filter by year
+    if (options.year) {
+      publications = publications.filter(pub => pub.year === options.year);
+    }
+
+    // Filter by category
+    if (options.category) {
+      publications = publications.filter(pub => pub.category === options.category);
+    }
+
+    // Filter by type (conference/journal)
+    if (options.type) {
+      publications = publications.filter(pub => pub.type === options.type);
+    }
+
+    // Filter by featured
+    if (options.featured !== undefined) {
+      publications = publications.filter(pub => pub.featured === options.featured);
+    }
+
+    // Sort publications: preprints first, then by year (newest first)
+    publications.sort((a, b) => {
+      // If one is preprint and other is not, preprint comes first
+      if (a.type === 'preprint' && b.type !== 'preprint') return -1;
+      if (a.type !== 'preprint' && b.type === 'preprint') return 1;
+      
+      // Within same type (both preprints or both not preprints), sort by year (newest first)
+      return b.year - a.year;
+    });
+
+    // Limit results
+    if (options.limit) {
+      publications = publications.slice(0, options.limit);
+    }
+
+    return publications;
+  }
+
+  // Get unique years from publications
+  async getPublicationYears() {
+    const data = await this.loadData('publications');
+    const years = [...new Set(data.publications.map(pub => pub.year))];
+    return years.sort((a, b) => b - a);
+  }
+
+  // Get publication categories
+  async getPublicationCategories() {
+    const data = await this.loadData('publications');
+    return data.categories || {};
+  }
+
+  // Get publication venues
+  async getPublicationVenues() {
+    const data = await this.loadData('publications');
+    return data.venues || {};
+  }
+
+  // Search functionality
+  async searchPublications(query) {
+    const data = await this.loadData('publications');
+    const searchTerm = query.toLowerCase();
+
+    return data.publications.filter(pub =>
+      pub.title.toLowerCase().includes(searchTerm) ||
+      pub.authors.some(author => author.toLowerCase().includes(searchTerm)) ||
+      pub.venue.toLowerCase().includes(searchTerm) ||
+      (pub.keywords && pub.keywords.some(keyword => keyword.toLowerCase().includes(searchTerm))) ||
+      (pub.abstract && pub.abstract.toLowerCase().includes(searchTerm))
+    );
+  }
+
+  // Get people with filtering and sorting
+  async getPeople(options = {}) {
+    const data = await this.loadData('people');
+    let people = [];
+
+    // Combine all people from different sections (faculty is now hardcoded in HTML)
+    if (data.current) people = people.concat(data.current);
+    if (data.alumni) people = people.concat(data.alumni);
+
+    // Filter by position (current/alumni)
+    if (options.position) {
+      people = people.filter(person => person.position === options.position);
+    }
+
+    // Filter by category
+    if (options.category) {
+      people = people.filter(person => person.category === options.category);
+    }
+
+    // Sort current members by category hierarchy, alumni by graduation date
+    if (options.position === 'current') {
+      const categoryOrder = ['postdoc', 'phd', 'masters', 'undergraduate', 'visiting'];
+      people.sort((a, b) => {
+        const aIndex = categoryOrder.indexOf(a.category);
+        const bIndex = categoryOrder.indexOf(b.category);
+        if (aIndex !== bIndex) {
+          return aIndex - bIndex;
+        }
+        // Within same category, sort by join date (earliest first for current)
+        return new Date(a.joinDate || '2000-01-01') - new Date(b.joinDate || '2000-01-01');
+      });
+    } else if (options.position === 'alumni') {
+      // Sort alumni by graduation date (newest first)
+      people.sort((a, b) => new Date(b.graduationDate || '2000-01-01') - new Date(a.graduationDate || '2000-01-01'));
+    }
+
+    // Limit results
+    if (options.limit) {
+      people = people.slice(0, options.limit);
+    }
+
+    return people;
+  }
+
+  // Get current members
+  async getCurrentMembers(options = {}) {
+    const data = await this.loadData('people');
+    let current = data.current || [];
+    
+    // Apply filtering if needed
+    if (options.category) {
+      current = current.filter(person => person.category === options.category);
+    }
+    
+    // Sort by join date (earliest first)
+    current.sort((a, b) => new Date(a.joinDate || '2000-01-01') - new Date(b.joinDate || '2000-01-01'));
+    
+    if (options.limit) {
+      current = current.slice(0, options.limit);
+    }
+    
+    return current;
+  }
+
+  // Get alumni
+  async getAlumni(options = {}) {
+    const data = await this.loadData('people');
+    let alumni = data.alumni || [];
+    
+    // Apply filtering if needed
+    if (options.category) {
+      alumni = alumni.filter(person => person.category === options.category);
+    }
+    
+    // Sort by graduation date (newest first)
+    alumni.sort((a, b) => new Date(b.graduationDate || '2000-01-01') - new Date(a.graduationDate || '2000-01-01'));
+    
+    if (options.limit) {
+      alumni = alumni.slice(0, options.limit);
+    }
+    
+    return alumni;
+  }
+
+  // Get people categories
+  async getPeopleCategories() {
+    const data = await this.loadData('people');
+    return data.categories || {};
+  }
+
+  // Get people positions
+  async getPeoplePositions() {
+    const data = await this.loadData('people');
+    return data.positions || {};
+  }
+
+  // Search people functionality
+  async searchPeople(query, position = null) {
+    const data = await this.loadData('people');
+    const searchTerm = query.toLowerCase();
+    let people = data.people;
+
+    // Filter by position if specified
+    if (position) {
+      people = people.filter(person => person.position === position);
+    }
+
+    return people.filter(person =>
+      person.name.toLowerCase().includes(searchTerm) ||
+      person.title.toLowerCase().includes(searchTerm) ||
+      (person.email && person.email.toLowerCase().includes(searchTerm)) ||
+      (person.nextPosition && person.nextPosition.toLowerCase().includes(searchTerm)) ||
+      (person.researchInterests && person.researchInterests.some(interest => 
+        interest.toLowerCase().includes(searchTerm)
+      ))
+    );
+  }
+
+  // Format date for display
+  formatDate(dateString, format = 'short') {
+    const date = new Date(dateString);
+
+    if (format === 'short') {
+      return date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'short'
+      });
+    } else if (format === 'long') {
+      return date.toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+    }
+
+    return dateString;
+  }
+
+  // Clear cache (useful for development)
+  clearCache() {
+    this.cache = {
+      news: null,
+      publications: null,
+      people: null
+    };
+    this.loadPromises = {};
+  }
+}
+
+// Create global instance
+window.dataManager = new DataManager();

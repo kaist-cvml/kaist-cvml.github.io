@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CVML - Alumni</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="../assets/logos/cvml-logo.png" alt="CVML Lab" class="logo-img">
+          <span class="logo-text">CVML</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="people.html" class="nav-link">People</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="alumni.html" class="nav-link active">Alumni</a></li>
+          <li><a href="apply.html" class="nav-link">Apply</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Alumni</h1>
+        <p class="page-subtitle">Our distinguished alumni making impact worldwide</p>
+      </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="alumni-controls">
+      <div class="container">
+        <div class="controls-wrapper">
+          <div class="search-box">
+            <input type="text" id="alumni-search" placeholder="Search alumni by name, position, or company...">
+            <button type="button" id="search-btn">Search</button>
+          </div>
+          <div class="filter-controls">
+            <select id="category-filter">
+              <option value="">All Categories</option>
+            </select>
+            <select id="year-filter">
+              <option value="">All Years</option>
+            </select>
+            <button type="button" id="clear-filters">Clear Filters</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alumni-section">
+      <div class="container">
+        <!-- Alumni will be dynamically loaded here -->
+        <div id="alumni-container">
+          <div class="loading">Loading alumni...</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>KAIST CVML Lab</h3>
+          <p>Computer Vision & Machine Learning Laboratory</p>
+          <p>Korea Advanced Institute of Science and Technology</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:contact@cvml.kaist.ac.kr" class="footer-link">Contact</a>
+          <a href="apply.html" class="footer-link">Join Us</a>
+          <a href="https://github.com/kaist-cvml" class="footer-link">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 KAIST Computer Vision & Machine Learning Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/data-manager.js"></script>
+  <script src="../js/alumni.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

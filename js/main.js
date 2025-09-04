@@ -1,0 +1,363 @@
+// News management - now using JSON data
+let currentNewsCount = 5; // Initially show 5 news items
+let allNewsData = []; // Will be populated from JSON
+
+// DOM elements
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+const newsList = document.getElementById('news-list');
+
+// Initialize the page
+document.addEventListener('DOMContentLoaded', function () {
+  initializeNavigation();
+
+  // Only load news on homepage
+  if (newsList) {
+    loadNews();
+  }
+
+  // Load featured publications on homepage
+  const featuredPublicationsList = document.getElementById('featured-publications-list');
+  if (featuredPublicationsList) {
+    loadFeaturedPublications();
+  }
+
+  setupSmoothScrolling();
+  initializeFilters();
+});
+
+// Navigation functionality
+function initializeNavigation() {
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', function () {
+      navMenu.classList.toggle('active');
+
+      // Animate hamburger menu
+      const bars = navToggle.querySelectorAll('.bar');
+      bars.forEach((bar, index) => {
+        if (navMenu.classList.contains('active')) {
+          if (index === 0) bar.style.transform = 'rotate(-45deg) translate(-5px, 6px)';
+          if (index === 1) bar.style.opacity = '0';
+          if (index === 2) bar.style.transform = 'rotate(45deg) translate(-5px, -6px)';
+        } else {
+          bar.style.transform = 'none';
+          bar.style.opacity = '1';
+        }
+      });
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        const bars = navToggle.querySelectorAll('.bar');
+        bars.forEach(bar => {
+          bar.style.transform = 'none';
+          bar.style.opacity = '1';
+        });
+      });
+    });
+  }
+}
+
+// Load news items from JSON (homepage only)
+async function loadNews() {
+  if (!newsList) return;
+
+  try {
+    // Load news data from JSON
+    if (allNewsData.length === 0) {
+      allNewsData = await window.dataManager.getNews();
+    }
+
+    newsList.innerHTML = '';
+
+    for (let i = 0; i < Math.min(currentNewsCount, allNewsData.length); i++) {
+      const newsItem = createNewsItem(allNewsData[i]);
+      newsList.appendChild(newsItem);
+    }
+
+    // Hide "Load More" button if all news are displayed
+    const loadMoreBtn = document.querySelector('.news-actions button');
+    if (loadMoreBtn) {
+      if (currentNewsCount >= allNewsData.length) {
+        loadMoreBtn.style.display = 'none';
+      } else {
+        loadMoreBtn.style.display = 'inline-block';
+      }
+    }
+  } catch (error) {
+    console.error('Error loading news:', error);
+    // Show error message to user
+    newsList.innerHTML = '<div class="news-item"><div class="news-content">Error loading news. Please try again later.</div></div>';
+  }
+}
+
+// Create a news item element
+function createNewsItem(news) {
+  const newsItem = document.createElement('div');
+  newsItem.className = 'news-item';
+
+  // Add category class for styling
+  if (news.category) {
+    newsItem.classList.add(`news-${news.category}`);
+  }
+
+  // Add featured class
+  if (news.featured) {
+    newsItem.classList.add('news-featured');
+  }
+
+  newsItem.style.opacity = '0';
+  newsItem.style.transform = 'translateY(20px)';
+
+  // Format date using data manager
+  const formattedDate = window.dataManager.formatDate(news.date, 'short');
+
+  newsItem.innerHTML = `
+    <div class="news-date">[${formattedDate}]</div>
+    <div class="news-content">${news.content}</div>
+    ${news.category ? `<div class="news-category">${news.category}</div>` : ''}
+  `;
+
+  // Animate the news item
+  setTimeout(() => {
+    newsItem.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    newsItem.style.opacity = '1';
+    newsItem.style.transform = 'translateY(0)';
+  }, 100);
+
+  return newsItem;
+}
+
+// Load more news
+function loadMoreNews() {
+  currentNewsCount += 5;
+  loadNews();
+}
+
+// Load featured publications for homepage
+async function loadFeaturedPublications() {
+  const featuredPublicationsList = document.getElementById('featured-publications-list');
+  if (!featuredPublicationsList) return;
+
+  try {
+    const publications = await window.dataManager.getPublications();
+    const featuredPubs = publications.filter(pub => pub.featured).slice(0, 4); // Show top 4 featured
+
+    featuredPublicationsList.innerHTML = '';
+
+    featuredPubs.forEach(pub => {
+      const pubItem = createPublicationItem(pub, 'compact');
+      featuredPublicationsList.appendChild(pubItem);
+    });
+
+    if (featuredPubs.length === 0) {
+      featuredPublicationsList.innerHTML = '<div class="no-publications">No featured publications yet.</div>';
+    }
+  } catch (error) {
+    console.error('Error loading featured publications:', error);
+    featuredPublicationsList.innerHTML = '<div class="error-message">Error loading publications.</div>';
+  }
+}
+
+// Create a publication item element
+function createPublicationItem(publication, style = 'full') {
+  const pubItem = document.createElement('div');
+  pubItem.className = style === 'compact' ? 'publication-item compact' : 'publication-item';
+
+  // Add category class for styling
+  if (publication.category) {
+    pubItem.classList.add(`pub-${publication.category}`);
+  }
+
+  // Build authors string
+  const authorsString = publication.authors ? publication.authors.join(', ') : 'No authors listed';
+
+  // Get venue and year
+  const venueInfo = `${publication.venue || 'Venue TBD'} ${publication.year || ''}`;
+
+  // Build links
+  let linksHtml = '';
+  if (publication.pdf_url && publication.pdf_url !== '#') {
+    linksHtml += `<a href="${publication.pdf_url}" class="pub-link" target="_blank">PDF</a>`;
+  }
+  if (publication.code_url && publication.code_url !== '#') {
+    linksHtml += `<a href="${publication.code_url}" class="pub-link" target="_blank">Code</a>`;
+  }
+  if (publication.project_url && publication.project_url !== '#') {
+    linksHtml += `<a href="${publication.project_url}" class="pub-link" target="_blank">Project</a>`;
+  }
+
+  // Special presentation info
+  let presentationBadge = '';
+  if (publication.presentation) {
+    if (publication.presentation === 'oral') {
+      presentationBadge = '<span class="presentation-badge oral">Oral</span>';
+    } else if (publication.presentation === 'outstanding paper') {
+      presentationBadge = '<span class="presentation-badge outstanding">Outstanding Paper</span>';
+    }
+  }
+
+  if (style === 'compact') {
+    pubItem.innerHTML = `
+      <div class="pub-header">
+        <h3 class="pub-title">${publication.title}</h3>
+        ${presentationBadge}
+      </div>
+      <div class="pub-authors">${authorsString}</div>
+      <div class="pub-venue">${venueInfo}</div>
+      ${linksHtml ? `<div class="pub-links">${linksHtml}</div>` : ''}
+    `;
+  } else {
+    pubItem.innerHTML = `
+      <div class="pub-header">
+        <h3 class="pub-title">${publication.title}</h3>
+        ${presentationBadge}
+      </div>
+      <div class="pub-authors">${authorsString}</div>
+      <div class="pub-venue">${venueInfo}</div>
+      ${publication.abstract ? `<div class="pub-abstract">${publication.abstract}</div>` : ''}
+      ${publication.keywords ? `<div class="pub-keywords">${publication.keywords.join(', ')}</div>` : ''}
+      ${linksHtml ? `<div class="pub-links">${linksHtml}</div>` : ''}
+    `;
+  }
+
+  return pubItem;
+}
+
+// Initialize filter functionality for publications and gallery
+function initializeFilters() {
+  // Publications filter
+  const publicationFilters = document.querySelectorAll('.publication-filters .filter-btn');
+  const yearSections = document.querySelectorAll('.year-section');
+
+  publicationFilters.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const year = this.getAttribute('data-year');
+
+      // Update active state
+      publicationFilters.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      // Show/hide year sections
+      yearSections.forEach(section => {
+        if (year === 'all' || section.getAttribute('data-year') === year) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Gallery filter
+  const galleryFilters = document.querySelectorAll('.gallery-filters .filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+
+  galleryFilters.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const category = this.getAttribute('data-category');
+
+      // Update active state
+      galleryFilters.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      // Show/hide gallery items
+      galleryItems.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+}
+
+// Gallery load more functionality
+function loadMoreGallery() {
+  // This can be implemented to load more gallery items
+  console.log('Load more gallery items');
+}
+
+// Smooth scrolling for navigation links
+function setupSmoothScrolling() {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        const headerOffset = 60;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+}
+
+// Add scroll effect to navigation
+window.addEventListener('scroll', function () {
+  const header = document.querySelector('.header');
+  if (header) {
+    if (window.scrollY > 50) {
+      header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+    } else {
+      header.style.boxShadow = 'none';
+    }
+  }
+});
+
+// Intersection Observer for animations
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function (entries) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, observerOptions);
+
+// Observe elements for animation
+document.addEventListener('DOMContentLoaded', function () {
+  const animatedElements = document.querySelectorAll('.news-item, .person-card, .publication-item, .project-card, .gallery-item');
+  animatedElements.forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+  });
+});
+
+// Utility function to add new news (for future use)
+function addNews(date, content) {
+  newsData.unshift({ date, content });
+  currentNewsCount = 5; // Reset to show first 5 items
+  loadNews();
+}
+
+// Handle placeholder images with error fallback
+document.addEventListener('DOMContentLoaded', function () {
+  const images = document.querySelectorAll('img');
+  images.forEach(img => {
+    img.addEventListener('error', function () {
+      // Create a placeholder if image fails to load
+      this.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjVGNUY1Ii8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTQiPkltYWdlPC90ZXh0Pgo8L3N2Zz4K';
+    });
+  });
+});
+
+// Export functions for external use
+window.loadMoreNews = loadMoreNews;
+window.loadMoreGallery = loadMoreGallery;
+window.addNews = addNews;

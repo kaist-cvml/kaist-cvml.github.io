@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CVML - Gallery</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="../assets/logos/cvml-logo.png" alt="CVML Lab" class="logo-img">
+          <span class="logo-text">CVML</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="people.html" class="nav-link">People</a></li>
+          <li><a href="publications.html" class="nav-link">Publications</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="apply.html" class="nav-link">Apply</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Gallery</h1>
+        <p class="page-subtitle">Lab life, events, and research highlights</p>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="container">
+        <!-- Gallery Categories -->
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-category="all">All</button>
+          <button class="filter-btn" data-category="lab-life">Lab Life</button>
+          <button class="filter-btn" data-category="conferences">Conferences</button>
+          <button class="filter-btn" data-category="events">Events</button>
+          <button class="filter-btn" data-category="research">Research</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          <!-- Lab Life Images -->
+          <div class="gallery-item" data-category="lab-life">
+            <div class="gallery-image">
+              <img src="../assets/images/gallery/lab-meeting.jpg" alt="Lab Meeting" class="gallery-img">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">Weekly Lab Meeting</h4>
+                <p class="gallery-description">Our team discussing latest research progress</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="lab-life">
+            <div class="gallery-image">
+              <img src="../assets/images/gallery/research-discussion.jpg" alt="Research Discussion" class="gallery-img">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">Research Discussion</h4>
+                <p class="gallery-description">Collaborative problem solving session</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conference Images -->
+          <div class="gallery-item" data-category="conferences">
+            <div class="gallery-image">
+              <img src="../assets/images/gallery/cvpr-presentation.jpg" alt="CVPR Presentation" class="gallery-img">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">CVPR 2025 Presentation</h4>
+                <p class="gallery-description">Presenting our latest computer vision research</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="conferences">
+            <div class="gallery-image">
+              <img src="../assets/images/gallery/neurips-poster.jpg" alt="NeurIPS Poster" class="gallery-img">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">NeurIPS 2024 Poster</h4>
+                <p class="gallery-description">Poster session at NeurIPS conference</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Events Images -->
+          <div class="gallery-item" data-category="events">
+            <div class="gallery-image">
+              <img src="../assets/images/gallery/graduation.jpg" alt="Graduation Ceremony" class="gallery-img">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">PhD Graduation</h4>
+                <p class="gallery-description">Celebrating our graduates' achievements</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="events">
+            <div class="gallery-image">
+              <img src="../assets/images/gallery/lab-retreat.jpg" alt="Lab Retreat" class="gallery-img">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">Annual Lab Retreat</h4>
+                <p class="gallery-description">Team building and research planning</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Images -->
+          <div class="gallery-item" data-category="research">
+            <div class="gallery-image">
+              <img src="../assets/images/gallery/demo-setup.jpg" alt="Demo Setup" class="gallery-img">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">Research Demo Setup</h4>
+                <p class="gallery-description">Setting up AI model demonstrations</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="research">
+            <div class="gallery-image">
+              <img src="../assets/images/gallery/experiment.jpg" alt="Experiment" class="gallery-img">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">Computer Vision Experiment</h4>
+                <p class="gallery-description">Testing robust vision algorithms</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="lab-life">
+            <div class="gallery-image">
+              <img src="../assets/images/gallery/collaboration.jpg" alt="Collaboration" class="gallery-img">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">International Collaboration</h4>
+                <p class="gallery-description">Meeting with visiting researchers</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="events">
+            <div class="gallery-image">
+              <img src="../assets/images/gallery/workshop.jpg" alt="Workshop" class="gallery-img">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">AI Workshop</h4>
+                <p class="gallery-description">Hosting AI workshop for students</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="research">
+            <div class="gallery-image">
+              <img src="../assets/images/gallery/visualization.jpg" alt="Data Visualization" class="gallery-img">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">Research Visualization</h4>
+                <p class="gallery-description">Analyzing experimental results</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item" data-category="conferences">
+            <div class="gallery-image">
+              <img src="../assets/images/gallery/award.jpg" alt="Award Ceremony" class="gallery-img">
+              <div class="gallery-overlay">
+                <h4 class="gallery-title">Best Paper Award</h4>
+                <p class="gallery-description">Receiving recognition for our research</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="gallery-actions">
+          <button class="btn btn-secondary" onclick="loadMoreGallery()">Load More Images</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>KAIST CVML Lab</h3>
+          <p>Computer Vision & Machine Learning Laboratory</p>
+          <p>Korea Advanced Institute of Science and Technology</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:contact@cvml.kaist.ac.kr" class="footer-link">Contact</a>
+          <a href="apply.html" class="footer-link">Join Us</a>
+          <a href="https://github.com/kaist-cvml" class="footer-link">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 KAIST Computer Vision & Machine Learning Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

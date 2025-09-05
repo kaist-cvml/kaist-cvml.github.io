@@ -55,7 +55,8 @@
       "email": "jihochoi@kaist.ac.kr",
       "category": "phd",
       "image": "JihoChoi.jpg",
-      "researchInterests": ["Open-Vocabulary", "Part segmentation"]
+      "researchInterests": ["Open-Vocabulary", "Part segmentation"],
+      "website":"http://jihochoi.github.io/"
     },
     {
       "name": "Seojeong Park",

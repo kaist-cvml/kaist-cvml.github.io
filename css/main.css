@@ -51,6 +51,11 @@ body {
   height: 32px;
 }
 
+.logo-text {
+  font-weight: 600;
+  color: #333;
+}
+
 .nav-menu {
   display: flex;
   list-style: none;
@@ -71,10 +76,6 @@ body {
 .nav-link.active {
   color: #333;
   background-color: #f5f5f5;
-}
-
-.dropdown {
-  position: relative;
 }
 
 .nav-toggle {
@@ -637,12 +638,7 @@ body {
   margin-bottom: 10px;
 }
 
-.person-description {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.4;
-  margin-bottom: 15px;
-}
+/* Person cards */
 
 .person-links {
   display: flex;
@@ -777,7 +773,8 @@ body {
 }
 
 .research-interests {
-  margin-bottom: 15px;
+  font-size: 13px;
+  margin-bottom: 13px;
 }
 
 .research-interests strong {
@@ -786,12 +783,13 @@ body {
 }
 
 .research-interests p {
-  font-size: 12px;
+  font-size: 13px;
   color: #666;
   margin-top: 3px;
 }
 
 .person-email {
+  color: #007bff;
   font-size: 13px;
   margin-bottom: 10px;
 }
@@ -1006,11 +1004,6 @@ body {
   font-weight: 600;
   color: #333;
   margin-bottom: 5px;
-}
-
-.alumni-details {
-  font-size: 14px;
-  color: #666;
 }
 
 /* Publications Page */

@@ -278,7 +278,6 @@ function initializeFilters() {
 // Gallery load more functionality
 function loadMoreGallery() {
   // This can be implemented to load more gallery items
-  console.log('Load more gallery items');
 }
 
 // Smooth scrolling for navigation links

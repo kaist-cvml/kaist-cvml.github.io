@@ -39,14 +39,15 @@
       "email": "naminan@kaist.ac.kr",
       "category": "phd",
       "image": "NaminAn.png",
-      "researchInterests": ["Generative models"]
+      "researchInterests": ["Generative models"], 
+      "website": "https://namin-an.github.io/"
     },
     {
       "name": "Junsung Park",
       "email": "jshackist@kaist.ac.kr",
       "category": "phd",
       "image": "JunsungPark.png",
-      "researchInterests": ["Autonomous Driving, Vision Language Action Models, World Models"],
+      "researchInterests": ["Autonomous Driving & Navigation"],
       "website": "https://engineerjpark.github.io/"
     },
     {
@@ -82,7 +83,7 @@
       "email": "tom919@kaist.ac.kr",
       "category": "masters",
       "image": "JiwookKim.jpg",
-      "researchInterests": ["High-dimensional Vision", "Vision Foundation Model"]
+      "researchInterests": ["High-dimensional Vision", "Vision Foundation Model", "World Model"]
     },
     {
       "name": "Seonho Lee",
@@ -103,14 +104,14 @@
       "email": "rkswlsj13@kaist.ac.kr",
       "category": "phd",
       "image": "InhaKang.jpg",
-      "researchInterests": ["Computer Vision", "Machine Learning"]
+      "researchInterests": ["Vision Language Models", "Multimodal"]
     },
     {
       "name": "Wonjeong Ryu",
       "email": "petac@kaist.ac.kr",
       "category": "phd",
       "image": "WongjungRyu.jpg",
-      "researchInterests": ["Computer Vision", "Machine Learning"]
+      "researchInterests": ["Computer Vision", "RAS"]
     },
     {
       "name": "Soyeon Yoon",
@@ -131,7 +132,7 @@
       "email": "bestgenius10@kaist.ac.kr",
       "category": "masters",
       "image": "JinwooLee.jpg",
-      "researchInterests": ["Computer Vision", "Machine Learning"]
+      "researchInterests": ["3D Computer Vision"]
     },
     {
       "name": "Eunki Kim",
@@ -145,7 +146,8 @@
       "email": "suinlee@kaist.ac.kr",
       "category": "intern",
       "image": "SuinLee.jpg",
-      "researchInterests": ["Computer Vision", "Machine Learning"]
+      "researchInterests": ["3D Computer Vision", "3D Generative Models"],
+      "website": "https://adios42.github.io/"
     },
     {
       "name": "Raehyuk Jung",

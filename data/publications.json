@@ -12,31 +12,6 @@
   },
   "publications": [
     {
-      "title": "Today is Friday",
-      "authors": ["Lee", "Choi", "An", "Hyunjung Shim"],
-      "venue": "arXiv",
-      "year": 2025,
-      "type": "preprint",
-      "status": "submitted",
-      "keywords": ["Vision-Language Models", "Scene Understanding", "Multimodal Learning"],
-      "category": "cv",
-      "pdf_url": "https://arxiv.org/pdf/2501.xxxxx.pdf",
-      "code_url": "https://github.com/kaist-cvml/advanced-vlm",
-      "project_url": "https://kaist-cvml.github.io/advanced-vlm"
-    },
-    {
-      "title": "Awesome Preprints",
-      "authors": ["Kim", "Lee", "Park", "Hyunjung Shim"],
-      "venue": "arXiv",
-      "year": 2025,
-      "type": "preprint",
-      "status": "submitted",
-      "keywords": ["3D Generation", "Geometric Priors", "Diffusion Models"],
-      "category": "cv",
-      "pdf_url": "https://arxiv.org/pdf/2501.yyyyy.pdf",
-      "project_url": "https://kaist-cvml.github.io/efficient-3d-gen"
-    },
-    {
       "title": "3D-Aware Vision-Language Models Fine-Tuning with Geometric Distillation",
       "authors": ["Seonho Lee*", "Jiho Choi*", "Inha Kang", "Jiwook Kim", "Junsung Park", "Hyunjung Shim"],
       "venue": "EMNLP Findings",

@@ -16,12 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
     loadNews();
   }
 
-  // Load featured publications on homepage
-  const featuredPublicationsList = document.getElementById('featured-publications-list');
-  if (featuredPublicationsList) {
-    loadFeaturedPublications();
-  }
-
   setupSmoothScrolling();
   initializeFilters();
 });
@@ -134,96 +128,6 @@ function createNewsItem(news) {
 function loadMoreNews() {
   currentNewsCount += 5;
   loadNews();
-}
-
-// Load featured publications for homepage
-async function loadFeaturedPublications() {
-  const featuredPublicationsList = document.getElementById('featured-publications-list');
-  if (!featuredPublicationsList) return;
-
-  try {
-    const publications = await window.dataManager.getPublications();
-    const featuredPubs = publications.filter(pub => pub.featured).slice(0, 4); // Show top 4 featured
-
-    featuredPublicationsList.innerHTML = '';
-
-    featuredPubs.forEach(pub => {
-      const pubItem = createPublicationItem(pub, 'compact');
-      featuredPublicationsList.appendChild(pubItem);
-    });
-
-    if (featuredPubs.length === 0) {
-      featuredPublicationsList.innerHTML = '<div class="no-publications">No featured publications yet.</div>';
-    }
-  } catch (error) {
-    console.error('Error loading featured publications:', error);
-    featuredPublicationsList.innerHTML = '<div class="error-message">Error loading publications.</div>';
-  }
-}
-
-// Create a publication item element
-function createPublicationItem(publication, style = 'full') {
-  const pubItem = document.createElement('div');
-  pubItem.className = style === 'compact' ? 'publication-item compact' : 'publication-item';
-
-  // Add category class for styling
-  if (publication.category) {
-    pubItem.classList.add(`pub-${publication.category}`);
-  }
-
-  // Build authors string
-  const authorsString = publication.authors ? publication.authors.join(', ') : 'No authors listed';
-
-  // Get venue and year
-  const venueInfo = `${publication.venue || 'Venue TBD'} ${publication.year || ''}`;
-
-  // Build links
-  let linksHtml = '';
-  if (publication.pdf_url && publication.pdf_url !== '#') {
-    linksHtml += `<a href="${publication.pdf_url}" class="pub-link" target="_blank">PDF</a>`;
-  }
-  if (publication.code_url && publication.code_url !== '#') {
-    linksHtml += `<a href="${publication.code_url}" class="pub-link" target="_blank">Code</a>`;
-  }
-  if (publication.project_url && publication.project_url !== '#') {
-    linksHtml += `<a href="${publication.project_url}" class="pub-link" target="_blank">Project</a>`;
-  }
-
-  // Special presentation info
-  let presentationBadge = '';
-  if (publication.presentation) {
-    if (publication.presentation === 'oral') {
-      presentationBadge = '<span class="presentation-badge oral">Oral</span>';
-    } else if (publication.presentation === 'outstanding paper') {
-      presentationBadge = '<span class="presentation-badge outstanding">Outstanding Paper</span>';
-    }
-  }
-
-  if (style === 'compact') {
-    pubItem.innerHTML = `
-      <div class="pub-header">
-        <h3 class="pub-title">${publication.title}</h3>
-        ${presentationBadge}
-      </div>
-      <div class="pub-authors">${authorsString}</div>
-      <div class="pub-venue">${venueInfo}</div>
-      ${linksHtml ? `<div class="pub-links">${linksHtml}</div>` : ''}
-    `;
-  } else {
-    pubItem.innerHTML = `
-      <div class="pub-header">
-        <h3 class="pub-title">${publication.title}</h3>
-        ${presentationBadge}
-      </div>
-      <div class="pub-authors">${authorsString}</div>
-      <div class="pub-venue">${venueInfo}</div>
-      ${publication.abstract ? `<div class="pub-abstract">${publication.abstract}</div>` : ''}
-      ${publication.keywords ? `<div class="pub-keywords">${publication.keywords.join(', ')}</div>` : ''}
-      ${linksHtml ? `<div class="pub-links">${linksHtml}</div>` : ''}
-    `;
-  }
-
-  return pubItem;
 }
 
 // Initialize filter functionality for publications and gallery

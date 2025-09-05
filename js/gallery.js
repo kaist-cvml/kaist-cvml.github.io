@@ -62,27 +62,45 @@ document.addEventListener('DOMContentLoaded', async function () {
     galleryContainer.innerHTML = html;
   }
 
-  // Create HTML for a single gallery item
+  function formatYearMonthOnly(dateStr, locale = 'ko-KR') {
+    try {
+      // YYYY-MM → YYYY-MM-01 로 보정
+      if (/^\d{4}-\d{2}$/.test(dateStr)) {
+        const d = new Date(`${dateStr}-01T00:00:00`);
+        return d.toLocaleDateString(locale, { year: 'numeric', month: 'long' });
+      }
+      // YYYY-MM-DD → 해당 월의 연·월만
+      if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
+        const [y, m] = dateStr.split('-');
+        const d = new Date(`${y}-${m}-01T00:00:00`);
+        return d.toLocaleDateString(locale, { year: 'numeric', month: 'long' });
+      }
+      // 기타 문자열도 Date 파싱 후 연·월만
+      const d = new Date(dateStr);
+      if (!isNaN(d)) {
+        return d.toLocaleDateString(locale, { year: 'numeric', month: 'long' });
+      }
+    } catch (_) {}
+    // 파싱 실패 시 원문 반환(안전장치)
+    return dateStr;
+  }
+  
+
   function createGalleryItemHTML(item) {
     const featuredClass = item.featured ? 'featured' : '';
-    const formattedDate = window.dataManager.formatDate(item.date, 'long');
-
-    // Set base directory for gallery images
+    const formattedDate = formatYearMonthOnly(item.date); // 예: "2025년 8월"
+  
     const imageUrl = item.image.startsWith('http') || item.image.startsWith('../')
       ? item.image
       : `../assets/images/gallery/${item.image}`;
-
-    const tagsHTML = item.tags ? item.tags.map(tag =>
-      `<span class="gallery-tag">${tag}</span>`
-    ).join('') : '';
-
+  
     const venueHTML = item.venue || item.location ? `
       <div class="gallery-venue">
         ${item.venue ? `<span class="venue">${item.venue}</span>` : ''}
         ${item.location ? `<span class="location">${item.location}</span>` : ''}
       </div>
     ` : '';
-
+  
     return `
       <div class="gallery-item ${featuredClass}" data-category="${item.category}">
         <div class="gallery-image">
@@ -94,12 +112,13 @@ document.addEventListener('DOMContentLoaded', async function () {
               <span class="gallery-date">${formattedDate}</span>
               ${venueHTML}
             </div>
-            ${tagsHTML ? `<div class="gallery-tags">${tagsHTML}</div>` : ''}
+            <!-- 태그 출력 제거 -->
           </div>
         </div>
       </div>
     `;
   }
+  
 
   // Setup event listeners
   function setupEventListeners() {

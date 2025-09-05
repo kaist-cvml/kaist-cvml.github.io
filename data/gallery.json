@@ -31,7 +31,7 @@
       "description": "교수님과 함께하는 벚꽃 나들이",
       "category": "lab-life",
       "date": "2025-04",
-      "image": "LabLife_Fall_Picnic_2024.jpg",
+      "image": "LabLife_Autumn_Picnic_2024.jpg",
       "alt_text": "Spring Lab Picnic",
       "featured": false,
       "tags": ["picnic", "lab-life", "outdoor"]
@@ -72,7 +72,7 @@
       "description": "가을 피크닉",
       "category": "lab-life",
       "date": "2024-11",
-      "image": "LabLife_Autumn_Picnic_2024.jpg",
+      "image": "LabLife_Fall_Picnic_2024.jpg",
       "alt_text": "Autumn Lab Picnic",
       "featured": false,
       "tags": ["picnic", "lab-life", "autumn"]

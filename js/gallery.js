@@ -66,8 +66,13 @@ document.addEventListener('DOMContentLoaded', async function () {
   function createGalleryItemHTML(item) {
     const featuredClass = item.featured ? 'featured' : '';
     const formattedDate = window.dataManager.formatDate(item.date, 'long');
-    
-    const tagsHTML = item.tags ? item.tags.map(tag => 
+
+    // Set base directory for gallery images
+    const imageUrl = item.image.startsWith('http') || item.image.startsWith('../')
+      ? item.image
+      : `../assets/images/gallery/${item.image}`;
+
+    const tagsHTML = item.tags ? item.tags.map(tag =>
       `<span class="gallery-tag">${tag}</span>`
     ).join('') : '';
 
@@ -81,7 +86,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     return `
       <div class="gallery-item ${featuredClass}" data-category="${item.category}">
         <div class="gallery-image">
-          <img src="${item.image}" alt="${item.alt_text}" class="gallery-img">
+          <img src="${imageUrl}" alt="${item.alt_text}" class="gallery-img">
           <div class="gallery-overlay">
             <h4 class="gallery-title">${item.title}</h4>
             <p class="gallery-description">${item.description}</p>

@@ -13,7 +13,7 @@
       "description": "Our team discussing latest research progress",
       "category": "lab-life",
       "date": "2025-08-15",
-      "image": "../assets/images/gallery/lab-meeting.jpg",
+      "image": "lab-meeting.jpg",
       "alt_text": "Lab Meeting",
       "featured": true,
       "tags": ["meeting", "discussion", "team"]
@@ -23,7 +23,7 @@
       "description": "Collaborative problem solving session",
       "category": "lab-life",
       "date": "2025-08-10",
-      "image": "../assets/images/gallery/research-discussion.jpg",
+      "image": "research-discussion.jpg",
       "alt_text": "Research Discussion",
       "featured": false,
       "tags": ["research", "collaboration", "problem-solving"]
@@ -33,7 +33,7 @@
       "description": "Presenting our latest computer vision research",
       "category": "conferences",
       "date": "2025-06-20",
-      "image": "../assets/images/gallery/cvpr-presentation.jpg",
+      "image": "cvpr-presentation.jpg",
       "alt_text": "CVPR Presentation",
       "featured": true,
       "tags": ["cvpr", "presentation", "computer-vision"],
@@ -45,7 +45,7 @@
       "description": "Poster session at NeurIPS conference",
       "category": "conferences",
       "date": "2024-12-15",
-      "image": "../assets/images/gallery/neurips-poster.jpg",
+      "image": "neurips-poster.jpg",
       "alt_text": "NeurIPS Poster",
       "featured": false,
       "tags": ["neurips", "poster", "machine-learning"],
@@ -57,7 +57,7 @@
       "description": "Annual lab workshop with industry partners",
       "category": "events",
       "date": "2025-07-10",
-      "image": "../assets/images/gallery/lab-workshop.jpg",
+      "image": "lab-workshop.jpg",
       "alt_text": "Lab Workshop",
       "featured": true,
       "tags": ["workshop", "industry", "collaboration"]
@@ -67,7 +67,7 @@
       "description": "PhD students presenting their research",
       "category": "events",
       "date": "2025-05-15",
-      "image": "../assets/images/gallery/grad-symposium.jpg",
+      "image": "grad-symposium.jpg",
       "alt_text": "Graduate Student Symposium",
       "featured": false,
       "tags": ["symposium", "phd", "presentation"]
@@ -77,7 +77,7 @@
       "description": "Visual representation of our novel algorithm",
       "category": "research",
       "date": "2025-04-20",
-      "image": "../assets/images/gallery/algorithm-viz.jpg",
+      "image": "algorithm-viz.jpg",
       "alt_text": "Algorithm Visualization",
       "featured": false,
       "tags": ["algorithm", "visualization", "research"]
@@ -87,7 +87,7 @@
       "description": "Latest results from our 3D scene understanding project",
       "category": "research",
       "date": "2025-03-25",
-      "image": "../assets/images/gallery/3d-reconstruction.jpg",
+      "image": "3d-reconstruction.jpg",
       "alt_text": "3D Reconstruction Results",
       "featured": true,
       "tags": ["3d", "reconstruction", "computer-vision"]
@@ -97,7 +97,7 @@
       "description": "Receiving best paper award at ICCV 2024",
       "category": "awards",
       "date": "2024-10-20",
-      "image": "../assets/images/gallery/best-paper-award.jpg",
+      "image": "best-paper-award.jpg",
       "alt_text": "Best Paper Award",
       "featured": true,
       "tags": ["award", "iccv", "recognition"],
@@ -109,7 +109,7 @@
       "description": "Meeting with Samsung Research team",
       "category": "collaborations",
       "date": "2025-02-14",
-      "image": "../assets/images/gallery/samsung-collab.jpg",
+      "image": "samsung-collab.jpg",
       "alt_text": "Industry Collaboration Meeting",
       "featured": false,
       "tags": ["collaboration", "samsung", "industry"]
@@ -119,7 +119,7 @@
       "description": "Visit from researchers at MIT CSAIL",
       "category": "collaborations",
       "date": "2025-01-30",
-      "image": "../assets/images/gallery/mit-visit.jpg",
+      "image": "mit-visit.jpg",
       "alt_text": "International Exchange",
       "featured": false,
       "tags": ["collaboration", "mit", "international"]
@@ -129,7 +129,7 @@
       "description": "Annual lab retreat at Jeju Island",
       "category": "events",
       "date": "2024-11-05",
-      "image": "../assets/images/gallery/lab-retreat.jpg",
+      "image": "lab-retreat.jpg",
       "alt_text": "Lab Retreat 2024",
       "featured": true,
       "tags": ["retreat", "team-building", "jeju"]

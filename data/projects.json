@@ -20,7 +20,7 @@
       "description": "TBD.",
       "funding": "Samsung Research",
       "duration": "2025.08 - 2026.08",
-      "image": "../assets/images/projects/samsung_research.png",
+      "image": "samsung_research.png",
       "publications": ["pub001", "pub002", "pub003"],
       "links": {}
     },
@@ -31,7 +31,7 @@
       "description": "TBD.",
       "funding": "IITP",
       "duration": "2025.04 - 2028.12",
-      "image": "../assets/images/projects/bias.png",
+      "image": "bias.png",
       "publications": ["pub004", "pub005"],
       "links": {}
     },
@@ -42,7 +42,7 @@
       "description": "TBD.",
       "funding": "TBD",
       "duration": "2023 - 2027",
-      "image": "../assets/images/projects/finedust.png",
+      "image": "finedust.png",
       "publications": ["pub004", "pub005"],
       "links": {}
     }

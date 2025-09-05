@@ -40,6 +40,13 @@ document.addEventListener('DOMContentLoaded', async function () {
     const statusClass = project.status === 'ongoing' ? 'ongoing' :
       project.status === 'completed' ? 'completed' : 'planned';
 
+    // Set base directory for project images
+    const imageUrl = project.image 
+      ? (project.image.startsWith('http') || project.image.startsWith('../') 
+          ? project.image 
+          : `../assets/images/projects/${project.image}`)
+      : '';
+
     const linksHTML = project.links && Object.keys(project.links).length > 0 ? `
       <div class="project-links">
         ${project.links.github ? `<a href="${project.links.github}" class="project-link">GitHub</a>` : ''}
@@ -50,7 +57,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     return `
       <div class="project-card" data-category="${project.category}" data-status="${project.status}">
         ${project.image ? `<div class="project-image" style="width: 300px; height: 200px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-          <img src="${project.image}" alt="${project.title}" class="project-img" style="width: 100%; height: 100%; object-fit: cover;">
+          <img src="${imageUrl}" alt="${project.title}" class="project-img" style="width: 100%; height: 100%; object-fit: cover;">
         </div>` : ''}
 
         <div class="project-header">

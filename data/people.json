@@ -16,14 +16,14 @@
       "name": "Seongjong Song",
       "email": "bell@yonsei.ac.kr",
       "category": "phd",
-      "image": "student-placeholder.svg",
+      "image": "SeongjongSong.png",
       "researchInterests": ["Image restoration"]
     },
     {
       "name": "Kunhee Kim",
       "email": "kunhee.kim@kaist.ac.kr",
       "category": "phd",
-      "image": "kunhee.JPG",
+      "image": "KunheeKim.JPG",
       "researchInterests": ["Generative models"],
       "website": "https://kunheek.github.io"
     },
@@ -31,126 +31,127 @@
       "name": "NaHyeon Park",
       "email": "julia19@kaist.ac.kr",
       "category": "phd",
-      "image": "student-placeholder.svg",
+      "image": "NahyeonPark.jpg",
       "researchInterests": ["Generative models"]
     },
     {
       "name": "Na Min An",
       "email": "naminan@kaist.ac.kr",
       "category": "phd",
-      "image": "student-placeholder.svg",
+      "image": "NaminAn.png",
       "researchInterests": ["Generative models"]
     },
     {
       "name": "Junsung Park",
       "email": "jshackist@kaist.ac.kr",
       "category": "phd",
-      "image": "student-placeholder.svg",
-      "researchInterests": ["Generative models"]
+      "image": "JunsungPark.png",
+      "researchInterests": ["Autonomous Driving, Vision Language Action Models, World Models"],
+      "website": "https://engineerjpark.github.io/"
     },
     {
       "name": "Jiho Choi",
       "email": "jihochoi@kaist.ac.kr",
       "category": "phd",
-      "image": "student-placeholder.svg",
+      "image": "JihoChoi.jpg",
       "researchInterests": ["Open-Vocabulary", "Part segmentation"]
     },
     {
       "name": "Seojeong Park",
       "email": "seojeong.park@kaist.ac.kr",
       "category": "phd",
-      "image": "seojeong_park.jpg",
-      "researchInterests": ["Video", "Multimodal"]
+      "image": "SeojeongPark.jpg",
+      "researchInterests": ["Multimodal"]
     },
     {
       "name": "Hojun Choi",
       "email": "hchoi256@kaist.ac.kr",
       "category": "masters",
-      "image": "student-placeholder.svg",
+      "image": "HojunChoi.jpg",
       "researchInterests": ["Open-Vocabulary", "Object Detection"]
     },
     {
       "name": "Junyong Kang",
       "email": "jykang@kaist.ac.kr",
       "category": "phd",
-      "image": "junyong_kang.jpg",
+      "image": "JunyongKang.jpg",
       "researchInterests": ["Representation learning", "Explainable AI"]
     },
     {
       "name": "Jiwook Kim",
       "email": "tom919@kaist.ac.kr",
       "category": "masters",
-      "image": "jiwook_kim.jpg",
+      "image": "JiwookKim.jpg",
       "researchInterests": ["High-dimensional Vision", "Vision Foundation Model"]
     },
     {
       "name": "Seonho Lee",
       "email": "seonho.lee@kaist.ac.kr",
       "category": "phd",
-      "image": "student-placeholder.svg",
+      "image": "SeonhoLee.jpg",
       "researchInterests": ["Computer Vision", "Machine Learning"]
     },
     {
       "name": "Jaeyo Shin",
       "email": "jaeyo_shin@kaist.ac.kr",
       "category": "masters",
-      "image": "student-placeholder.svg",
+      "image": "JaeyoShin.jpg",
       "researchInterests": ["3D Understanding", "Generative Models"]
     },
     {
       "name": "Inha Kang",
       "email": "rkswlsj13@kaist.ac.kr",
       "category": "phd",
-      "image": "student-placeholder.svg",
+      "image": "InhaKang.jpg",
       "researchInterests": ["Computer Vision", "Machine Learning"]
     },
     {
       "name": "Wonjeong Ryu",
       "email": "petac@kaist.ac.kr",
       "category": "phd",
-      "image": "student-placeholder.svg",
+      "image": "WongjungRyu.jpg",
       "researchInterests": ["Computer Vision", "Machine Learning"]
     },
     {
       "name": "Soyeon Yoon",
       "email": "thoyeony@kaist.ac.kr",
       "category": "phd",
-      "image": "student-placeholder.svg",
-      "researchInterests": ["Computer Vision", "Machine Learning"]
+      "image": "SoyeonYoon.jpg",
+      "researchInterests": ["3D Deformation", "Mesh Generation"]
     },
     {
       "name": "Seungjun Yu",
       "email": "seungjunyu@kaist.ac.kr",
       "category": "phd",
-      "image": "student-placeholder.svg",
+      "image": "SeungjunYu.jpg",
       "researchInterests": ["Computer Vision", "Machine Learning"]
     },
     {
       "name": "Jinwoo Lee",
       "email": "bestgenius10@kaist.ac.kr",
       "category": "masters",
-      "image": "student-placeholder.svg",
+      "image": "JinwooLee.jpg",
       "researchInterests": ["Computer Vision", "Machine Learning"]
     },
     {
       "name": "Eunki Kim",
       "email": "eunkikim@kaist.ac.kr",
       "category": "masters",
-      "image": "student-placeholder.svg",
+      "image": "EunkiKim.jpg",
       "researchInterests": ["Computer Vision", "Machine Learning"]
     },
     {
       "name": "Suin Lee",
       "email": "suinlee@kaist.ac.kr",
       "category": "intern",
-      "image": "student-placeholder.svg",
+      "image": "SuinLee.jpg",
       "researchInterests": ["Computer Vision", "Machine Learning"]
     },
     {
       "name": "Raehyuk Jung",
       "email": "",
       "category": "intern",
-      "image": "student-placeholder.svg",
+      "image": "RaehyukJung.jpg",
       "researchInterests": ["Computer Vision", "Machine Learning"]
     }
   ],
@@ -315,7 +316,7 @@
       "title": "Masters",
       "nextPosition": "TBD",
       "image": "yunji_jung.jpg",
-      "graduationDate": "2022-08"
+      "graduationDate": "2025-08"
     },
     {
       "name": "Youngsun Lim",

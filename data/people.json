@@ -84,14 +84,16 @@
       "email": "tom919@kaist.ac.kr",
       "category": "masters",
       "image": "JiwookKim.jpg",
-      "researchInterests": ["High-dimensional Vision", "Vision Foundation Model", "World Model"]
+      "researchInterests": ["High-dimensional Vision", "Vision Foundation Model", "World Model"], 
+      "website": "https://jw-kim.netlify.app/"
     },
     {
       "name": "Seonho Lee",
       "email": "seonho.lee@kaist.ac.kr",
       "category": "masters",
       "image": "SeonhoLee.jpg",
-      "researchInterests": ["Computer Vision", "Machine Learning"]
+      "researchInterests": ["Computer Vision", "Machine Learning"],
+      "website": "https://glanceyes.github.io/"
     },
     {
       "name": "Jaeyo Shin",

@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         <button class="filter-btn active" data-filter="type" data-value="all">All Types</button>
         <button class="filter-btn" data-filter="type" data-value="conference">Conferences</button>
         <button class="filter-btn" data-filter="type" data-value="journal">Journals</button>
-        <button class="filter-btn" data-filter="type" data-value="workshop">Workshop</button>
-        <button class="filter-btn" data-filter="type" data-value="preprint">Preprint</button>
+        <button class="filter-btn" data-filter="type" data-value="workshop">Workshops</button>
+        <button class="filter-btn" data-filter="type" data-value="preprint">Preprints</button>
       </div>
     `;
   }

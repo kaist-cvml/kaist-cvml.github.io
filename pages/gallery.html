@@ -44,140 +44,21 @@
 
     <section class="gallery-section">
       <div class="container">
-        <!-- Gallery Categories -->
-        <div class="gallery-filters">
-          <button class="filter-btn active" data-category="all">All</button>
-          <button class="filter-btn" data-category="lab-life">Lab Life</button>
-          <button class="filter-btn" data-category="conferences">Conferences</button>
-          <button class="filter-btn" data-category="events">Events</button>
-          <button class="filter-btn" data-category="research">Research</button>
+        <!-- Search and Filter Options -->
+        <div class="gallery-controls">
+          <div class="gallery-search" style="text-align: center; margin-bottom: 20px;">
+            <input type="text" placeholder="Search gallery..." class="search-input">
+          </div>
+          <div class="gallery-filters">
+            <!-- Filters will be dynamically generated -->
+            <div class="loading-message">Loading filters...</div>
+          </div>
         </div>
 
         <!-- Gallery Grid -->
         <div class="gallery-grid">
-          <!-- Lab Life Images -->
-          <div class="gallery-item" data-category="lab-life">
-            <div class="gallery-image">
-              <img src="../assets/images/gallery/lab-meeting.jpg" alt="Lab Meeting" class="gallery-img">
-              <div class="gallery-overlay">
-                <h4 class="gallery-title">Weekly Lab Meeting</h4>
-                <p class="gallery-description">Our team discussing latest research progress</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="lab-life">
-            <div class="gallery-image">
-              <img src="../assets/images/gallery/research-discussion.jpg" alt="Research Discussion" class="gallery-img">
-              <div class="gallery-overlay">
-                <h4 class="gallery-title">Research Discussion</h4>
-                <p class="gallery-description">Collaborative problem solving session</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Conference Images -->
-          <div class="gallery-item" data-category="conferences">
-            <div class="gallery-image">
-              <img src="../assets/images/gallery/cvpr-presentation.jpg" alt="CVPR Presentation" class="gallery-img">
-              <div class="gallery-overlay">
-                <h4 class="gallery-title">CVPR 2025 Presentation</h4>
-                <p class="gallery-description">Presenting our latest computer vision research</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="conferences">
-            <div class="gallery-image">
-              <img src="../assets/images/gallery/neurips-poster.jpg" alt="NeurIPS Poster" class="gallery-img">
-              <div class="gallery-overlay">
-                <h4 class="gallery-title">NeurIPS 2024 Poster</h4>
-                <p class="gallery-description">Poster session at NeurIPS conference</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Events Images -->
-          <div class="gallery-item" data-category="events">
-            <div class="gallery-image">
-              <img src="../assets/images/gallery/graduation.jpg" alt="Graduation Ceremony" class="gallery-img">
-              <div class="gallery-overlay">
-                <h4 class="gallery-title">PhD Graduation</h4>
-                <p class="gallery-description">Celebrating our graduates' achievements</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="events">
-            <div class="gallery-image">
-              <img src="../assets/images/gallery/lab-retreat.jpg" alt="Lab Retreat" class="gallery-img">
-              <div class="gallery-overlay">
-                <h4 class="gallery-title">Annual Lab Retreat</h4>
-                <p class="gallery-description">Team building and research planning</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Research Images -->
-          <div class="gallery-item" data-category="research">
-            <div class="gallery-image">
-              <img src="../assets/images/gallery/demo-setup.jpg" alt="Demo Setup" class="gallery-img">
-              <div class="gallery-overlay">
-                <h4 class="gallery-title">Research Demo Setup</h4>
-                <p class="gallery-description">Setting up AI model demonstrations</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="research">
-            <div class="gallery-image">
-              <img src="../assets/images/gallery/experiment.jpg" alt="Experiment" class="gallery-img">
-              <div class="gallery-overlay">
-                <h4 class="gallery-title">Computer Vision Experiment</h4>
-                <p class="gallery-description">Testing robust vision algorithms</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="lab-life">
-            <div class="gallery-image">
-              <img src="../assets/images/gallery/collaboration.jpg" alt="Collaboration" class="gallery-img">
-              <div class="gallery-overlay">
-                <h4 class="gallery-title">International Collaboration</h4>
-                <p class="gallery-description">Meeting with visiting researchers</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="events">
-            <div class="gallery-image">
-              <img src="../assets/images/gallery/workshop.jpg" alt="Workshop" class="gallery-img">
-              <div class="gallery-overlay">
-                <h4 class="gallery-title">AI Workshop</h4>
-                <p class="gallery-description">Hosting AI workshop for students</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="research">
-            <div class="gallery-image">
-              <img src="../assets/images/gallery/visualization.jpg" alt="Data Visualization" class="gallery-img">
-              <div class="gallery-overlay">
-                <h4 class="gallery-title">Research Visualization</h4>
-                <p class="gallery-description">Analyzing experimental results</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="gallery-item" data-category="conferences">
-            <div class="gallery-image">
-              <img src="../assets/images/gallery/award.jpg" alt="Award Ceremony" class="gallery-img">
-              <div class="gallery-overlay">
-                <h4 class="gallery-title">Best Paper Award</h4>
-                <p class="gallery-description">Receiving recognition for our research</p>
-              </div>
-            </div>
-          </div>
+          <!-- Gallery items will be dynamically loaded here -->
+          <div class="loading-message">Loading gallery...</div>
         </div>
 
         <!-- Load More Button -->
@@ -208,7 +89,9 @@
     </div>
   </footer>
 
+  <script src="../js/data-manager.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/gallery.js"></script>
 </body>
 
 </html>

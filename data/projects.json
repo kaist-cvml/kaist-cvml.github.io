@@ -1,0 +1,50 @@
+{
+  "categories": {
+    "generative-ai": "Generative AI",
+    "computer-vision": "Computer Vision",
+    "machine-learning": "Machine Learning",
+    "medical-imaging": "Medical Imaging",
+    "multimodal": "Multi-Modal Learning",
+    "robotics": "Robotics"
+  },
+  "status": {
+    "ongoing": "Ongoing",
+    "completed": "Completed",
+    "planned": "Planned"
+  },
+  "projects": [
+    {
+      "title": "Content-based visual rich document generation",
+      "category": "generative-ai",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "Samsung Research",
+      "duration": "2025.08 - 2026.08",
+      "image": "../assets/images/projects/samsung_research.png",
+      "publications": ["pub001", "pub002", "pub003"],
+      "links": {}
+    },
+    {
+      "title": "Development of self-evolving AI bias detection-correction-explain platform based on international multidisciplinary governance",
+      "category": "trustworthy-ai",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "IITP",
+      "duration": "2025.04 - 2028.12",
+      "image": "../assets/images/projects/bias.png",
+      "publications": ["pub004", "pub005"],
+      "links": {}
+    },
+    {
+      "title": "Development of an air quality prediction model using artificial intelligence",
+      "category": "trustworthy-ai",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "TBD",
+      "duration": "2023 - 2027",
+      "image": "../assets/images/projects/finedust.png",
+      "publications": ["pub004", "pub005"],
+      "links": {}
+    }
+  ]
+}

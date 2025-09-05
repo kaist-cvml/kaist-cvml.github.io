@@ -6,7 +6,9 @@ class DataManager {
     this.cache = {
       news: null,
       publications: null,
-      people: null
+      people: null,
+      projects: null,
+      gallery: null
     };
     this.loadPromises = {};
   }
@@ -93,6 +95,32 @@ class DataManager {
           }
         ]
       };
+    } else if (type === 'projects') {
+      return {
+        projects: [
+          {
+            id: "fallback001",
+            title: "Sample Project",
+            category: "computer-vision",
+            status: "ongoing",
+            description: "Sample project description",
+          }
+        ]
+      };
+    } else if (type === 'gallery') {
+      return {
+        gallery_items: [
+          {
+            id: "fallback001",
+            title: "Sample Gallery Item",
+            description: "Sample description",
+            category: "lab-life",
+            date: "2025-01-01",
+            image: "../assets/images/gallery/lab-meeting.svg",
+            alt_text: "Sample Image"
+          }
+        ]
+      };
     }
     return {};
   }
@@ -153,7 +181,7 @@ class DataManager {
       // If one is preprint and other is not, preprint comes first
       if (a.type === 'preprint' && b.type !== 'preprint') return -1;
       if (a.type !== 'preprint' && b.type === 'preprint') return 1;
-      
+
       // Within same type (both preprints or both not preprints), sort by year (newest first)
       return b.year - a.year;
     });
@@ -166,11 +194,13 @@ class DataManager {
     return publications;
   }
 
-  // Get unique years from publications
+  // Get unique years from publications (recent 5 years only)
   async getPublicationYears() {
     const data = await this.loadData('publications');
-    const years = [...new Set(data.publications.map(pub => pub.year))];
-    return years.sort((a, b) => b - a);
+    const allYears = [...new Set(data.publications.map(pub => pub.year))];
+    const sortedYears = allYears.sort((a, b) => b - a);
+    // Return only the recent 5 years
+    return sortedYears.slice(0, 5);
   }
 
   // Get publication categories
@@ -247,19 +277,19 @@ class DataManager {
   async getCurrentMembers(options = {}) {
     const data = await this.loadData('people');
     let current = data.current || [];
-    
+
     // Apply filtering if needed
     if (options.category) {
       current = current.filter(person => person.category === options.category);
     }
-    
+
     // Sort by join date (earliest first)
     current.sort((a, b) => new Date(a.joinDate || '2000-01-01') - new Date(b.joinDate || '2000-01-01'));
-    
+
     if (options.limit) {
       current = current.slice(0, options.limit);
     }
-    
+
     return current;
   }
 
@@ -267,19 +297,19 @@ class DataManager {
   async getAlumni(options = {}) {
     const data = await this.loadData('people');
     let alumni = data.alumni || [];
-    
+
     // Apply filtering if needed
     if (options.category) {
       alumni = alumni.filter(person => person.category === options.category);
     }
-    
+
     // Sort by graduation date (newest first)
     alumni.sort((a, b) => new Date(b.graduationDate || '2000-01-01') - new Date(a.graduationDate || '2000-01-01'));
-    
+
     if (options.limit) {
       alumni = alumni.slice(0, options.limit);
     }
-    
+
     return alumni;
   }
 
@@ -311,11 +341,122 @@ class DataManager {
       person.title.toLowerCase().includes(searchTerm) ||
       (person.email && person.email.toLowerCase().includes(searchTerm)) ||
       (person.nextPosition && person.nextPosition.toLowerCase().includes(searchTerm)) ||
-      (person.researchInterests && person.researchInterests.some(interest => 
+      (person.researchInterests && person.researchInterests.some(interest =>
         interest.toLowerCase().includes(searchTerm)
       ))
     );
   }
+
+  // === PROJECTS METHODS ===
+
+  // Get projects with filtering and sorting
+  async getProjects(options = {}) {
+    const data = await this.loadData('projects');
+    let projects = [...data.projects];
+
+    // Filter by category
+    if (options.category) {
+      projects = projects.filter(project => project.category === options.category);
+    }
+
+    // Filter by status
+    if (options.status) {
+      projects = projects.filter(project => project.status === options.status);
+    }
+
+    // Sort by status priority (ongoing first, then planned, then completed)
+    const statusOrder = ['ongoing', 'planned', 'completed'];
+    projects.sort((a, b) => {
+      const aIndex = statusOrder.indexOf(a.status);
+      const bIndex = statusOrder.indexOf(b.status);
+      return aIndex - bIndex;
+    });
+
+    // Limit results
+    if (options.limit) {
+      projects = projects.slice(0, options.limit);
+    }
+
+    return projects;
+  }
+
+  // Get project categories
+  async getProjectCategories() {
+    const data = await this.loadData('projects');
+    return data.categories || {};
+  }
+
+  // Get project status options
+  async getProjectStatuses() {
+    const data = await this.loadData('projects');
+    return data.status || {};
+  }
+
+  // Search projects functionality
+  async searchProjects(query) {
+    const data = await this.loadData('projects');
+    const searchTerm = query.toLowerCase();
+
+    return data.projects.filter(project =>
+      project.title.toLowerCase().includes(searchTerm) ||
+      project.description.toLowerCase().includes(searchTerm)
+    );
+  }
+
+  // === GALLERY METHODS ===
+
+  // Get gallery items with filtering and sorting
+  async getGalleryItems(options = {}) {
+    const data = await this.loadData('gallery');
+    let items = [...data.gallery_items];
+
+    // Filter by category
+    if (options.category) {
+      items = items.filter(item => item.category === options.category);
+    }
+
+    // Filter by featured
+    if (options.featured !== undefined) {
+      items = items.filter(item => item.featured === options.featured);
+    }
+
+    // Sort by date (newest first)
+    items.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    // Limit results
+    if (options.limit) {
+      items = items.slice(0, options.limit);
+    }
+
+    return items;
+  }
+
+  // Get gallery categories
+  async getGalleryCategories() {
+    const data = await this.loadData('gallery');
+    return data.categories || {};
+  }
+
+  // Get featured gallery items
+  async getFeaturedGalleryItems(limit = 6) {
+    return this.getGalleryItems({ featured: true, limit });
+  }
+
+  // Search gallery functionality
+  async searchGallery(query) {
+    const data = await this.loadData('gallery');
+    const searchTerm = query.toLowerCase();
+
+    return data.gallery_items.filter(item =>
+      item.title.toLowerCase().includes(searchTerm) ||
+      item.description.toLowerCase().includes(searchTerm) ||
+      (item.tags && item.tags.some(tag => tag.toLowerCase().includes(searchTerm))) ||
+      (item.venue && item.venue.toLowerCase().includes(searchTerm)) ||
+      (item.location && item.location.toLowerCase().includes(searchTerm))
+    );
+  }
+
+  // === UTILITY METHODS ===
 
   // Format date for display
   formatDate(dateString, format = 'short') {
@@ -342,7 +483,9 @@ class DataManager {
     this.cache = {
       news: null,
       publications: null,
-      people: null
+      people: null,
+      projects: null,
+      gallery: null
     };
     this.loadPromises = {};
   }

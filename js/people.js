@@ -88,9 +88,6 @@ class PeoplePage {
       : this.getPlaceholderImage(person.category);
 
     const links = [];
-    if (person.email) {
-      links.push(`<a href="mailto:${person.email}" class="person-link">Email</a>`);
-    }
     if (person.website) {
       links.push(`<a href="${person.website}" target="_blank" class="person-link">Website</a>`);
     }
@@ -101,18 +98,15 @@ class PeoplePage {
     return `
       <div class="person-card">
         <div class="person-photo">
-          <img src="${imagePath}" alt="${person.name}" class="photo"
+          <img src="${imagePath}" alt="${person.name}" class="photo" style="width: 150px; height: 150px; object-fit: cover;"
                onerror="this.src='${this.getPlaceholderImage(person.category)}'">
         </div>
         <div class="person-info">
           <h3 class="person-name">${person.name}</h3>
-          <p class="person-title">${person.title}</p>
+          ${person.email ? `<p class="person-email">${person.email}</p>` : ''}
           ${person.affiliation ? `<p class="person-affiliation">${person.affiliation}</p>` : ''}
           ${person.researchInterests ? `
-            <div class="research-interests">
-              <strong>Research Interests:</strong>
-              <p>${person.researchInterests.join(', ')}</p>
-            </div>
+            <p class="research-interests" style="font-weight: normal;"><span style="font-weight: bold;">Research Interests:</span> ${person.researchInterests.join(', ')}</p>
           ` : ''}
           ${links.length > 0 ? `<div class="person-links">${links.join('')}</div>` : ''}
         </div>

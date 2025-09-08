@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', async function () {
       project.status === 'completed' ? 'completed' : 'planned';
 
     // Set base directory for project images
-    const imageUrl = project.image 
-      ? (project.image.startsWith('http') || project.image.startsWith('../') 
-          ? project.image 
-          : `../assets/images/projects/${project.image}`)
+    const imageUrl = project.image
+      ? (project.image.startsWith('http') || project.image.startsWith('../')
+        ? project.image
+        : `../assets/images/projects/${project.image}`)
       : '';
 
     const linksHTML = project.links && Object.keys(project.links).length > 0 ? `

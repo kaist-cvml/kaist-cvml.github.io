@@ -21,7 +21,6 @@
       "funding": "Samsung Research",
       "duration": "2025.08 - 2026.08",
       "image": "samsung_research.png",
-      "publications": ["pub001", "pub002", "pub003"],
       "links": {}
     },
     {
@@ -29,10 +28,9 @@
       "category": "trustworthy-ai",
       "status": "ongoing",
       "description": "TBD.",
-      "funding": "IITP",
+      "funding": "Institute for Information & communication Technology Planning & evaluation (IITP)",
       "duration": "2025.04 - 2028.12",
       "image": "bias.png",
-      "publications": ["pub004", "pub005"],
       "links": {}
     },
     {
@@ -40,10 +38,9 @@
       "category": "trustworthy-ai",
       "status": "ongoing",
       "description": "TBD.",
-      "funding": "TBD",
+      "funding": "National Institute of Environmental Research (NIER)",
       "duration": "2023 - 2027",
       "image": "finedust.png",
-      "publications": ["pub004", "pub005"],
       "links": {}
     }
   ]

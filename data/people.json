@@ -32,14 +32,15 @@
       "email": "julia19@kaist.ac.kr",
       "category": "phd",
       "image": "NahyeonPark.jpg",
-      "researchInterests": ["Generative models"]
+      "researchInterests": ["Generative models"],
+      "website": "https://nahyeonkaty.github.io"
     },
     {
       "name": "Na Min An",
       "email": "naminan@kaist.ac.kr",
       "category": "phd",
       "image": "NaminAn.png",
-      "researchInterests": ["Generative models"], 
+      "researchInterests": ["Generative models"],
       "website": "https://namin-an.github.io/"
     },
     {
@@ -84,7 +85,7 @@
       "email": "tom919@kaist.ac.kr",
       "category": "masters",
       "image": "JiwookKim.jpg",
-      "researchInterests": ["High-dimensional Vision", "Vision Foundation Model", "World Model"], 
+      "researchInterests": ["High-dimensional Vision", "Vision Foundation Model", "World Model"],
       "website": "https://jw-kim.netlify.app/"
     },
     {

@@ -14,7 +14,8 @@
     {
       "title": "3D-Aware Vision-Language Models Fine-Tuning with Geometric Distillation",
       "authors": ["Seonho Lee*", "Jiho Choi*", "Inha Kang", "Jiwook Kim", "Junsung Park", "Hyunjung Shim"],
-      "venue": "EMNLP Findings",
+      "venue": "EMNLP",
+      "presentation": "Findings",
       "year": 2025,
       "type": "conference",
       "status": "accepted",
@@ -55,9 +56,8 @@
       "status": "accepted",
       "keywords": ["Part Segmentation", "Open-Vocabulary", "Image-Text Correspondence"],
       "category": "cv",
-      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/xxx.pdf",
-      "code_url": "https://github.com/kaist-cvml/ovpart-seg",
-      "project_url": "https://kaist-cvml.github.io/ovpart-seg"
+      "pdf_url": "https://cvpr.thecvf.com/virtual/2025/poster/32627",
+      "code_url": "https://github.com/kaist-cvml/part-catseg"
     },
     {
       "title": "Classifier-guided CLIP Distillation for Unsupervised Multi-label Classification",

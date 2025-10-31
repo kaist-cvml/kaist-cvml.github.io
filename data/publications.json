@@ -12,6 +12,16 @@
   },
   "publications": [
     {
+      "title": "MaskRIS: Semantic Distortion-aware Data Augmentation for Referring Image Segmentation",
+      "authors": ["Minhyun Lee", "Seungho Lee", "Song Park", "Dongyoon Han", "Byeongho Heo", "Hyunjung Shim"],
+      "venue": "Transactions on Machine Learning Research",
+      "year": 2025,
+      "type": "journal",
+      "status": "accepted",
+      "keywords": ["Data Augmentation", "Image Segmentation"],
+      "category": "ml"
+    },
+    {
       "title": "3D-Aware Vision-Language Models Fine-Tuning with Geometric Distillation",
       "authors": ["Seonho Lee*", "Jiho Choi*", "Inha Kang", "Jiwook Kim", "Junsung Park", "Hyunjung Shim"],
       "venue": "EMNLP",

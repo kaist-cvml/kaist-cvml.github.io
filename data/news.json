@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "news021",
+      "date": "2025-11-09",
+      "title": "Rethinking Direct Preference Optimization in Diffusion Models Accepted",
+      "content": "The paper \"<strong>Rethinking Direct Preference Optimization in Diffusion Models</strong>\" is accepted to <strong>AAAI 2026 and selected as oral presentation</strong>.",
+      "category": "publication",
+      "featured": false,
+      "venue": "AAAI 2026"
+    },
+    {
       "id": "news020",
       "date": "2025-08-01",
       "title": "3D-Aware Vision-Language Models Paper Accepted",

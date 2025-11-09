@@ -10,7 +10,20 @@
     "medical_imaging": "Medical Imaging",
     "multimodal": "Multi-Modal Learning"
   },
+
+  
   "publications": [
+    {
+      "title": "Rethinking Direct Preference Optimization in Diffusion Models",
+      "authors": ["Junyong Kang", "Seohyun Lim", "Kyungjune Baek", "Hyunjung Shim"],
+      "venue": "AAAI",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "presentation": "Oral",
+      "keywords": ["Reinforcement Learning", "Diffusion Models", "Preference Optimization"],
+      "category": "ml"
+    },
     {
       "title": "MaskRIS: Semantic Distortion-aware Data Augmentation for Referring Image Segmentation",
       "authors": ["Minhyun Lee", "Seungho Lee", "Song Park", "Dongyoon Han", "Byeongho Heo", "Hyunjung Shim"],

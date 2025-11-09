@@ -15,7 +15,7 @@
   "publications": [
     {
       "title": "Rethinking Direct Preference Optimization in Diffusion Models",
-      "authors": ["Junyong Kang", "Seohyun Lim", "Kyungjune Baek", "Hyunjung Shim"],
+      "authors": ["Junyong Kang*", "Seohyun Lim*", "Kyungjune Baek", "Hyunjung Shim"],
       "venue": "AAAI",
       "year": 2026,
       "type": "conference",

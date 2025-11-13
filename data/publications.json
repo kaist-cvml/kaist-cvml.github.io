@@ -26,7 +26,7 @@
     },
     {
       "title": "MaskRIS: Semantic Distortion-aware Data Augmentation for Referring Image Segmentation",
-      "authors": ["Minhyun Lee", "Seungho Lee", "Song Park", "Dongyoon Han", "Byeongho Heo", "Hyunjung Shim"],
+      "authors": ["Minhyun Lee*", "Seungho Lee*", "Song Park", "Dongyoon Han", "Byeongho Heo", "Hyunjung Shim"],
       "venue": "Transactions on Machine Learning Research",
       "year": 2025,
       "type": "journal",

@@ -59,11 +59,11 @@
       "status": "completed",
       "description": "Development of robust and efficient image segmentation algorithms with improved accuracy, speed, and reliability for industrial applications.",
       "funding": "SFA",
-      "duration": "—",
+      "duration": "2023",
       "links": {}
     },
     {
-      "title": "3-D Aware Vision Language Model",
+      "title": "3D Aware Vision Language Model",
       "category": "multimodal",
       "status": "completed",
       "description": "Design of a 3D-aware vision-language model that jointly reasons about images, text, and 3D structure.",
@@ -77,7 +77,7 @@
       "status": "completed",
       "description": "Low-shot learning techniques for image generative models to adapt to new concepts with limited examples.",
       "funding": "Naver AI",
-      "duration": "—",
+      "duration": "2023, 2024",
       "links": {}
     },
     {

@@ -11,8 +11,18 @@
     "multimodal": "Multi-Modal Learning"
   },
 
-  
+
   "publications": [
+    {
+      "title": "MomentMix Augmentation with Length-Aware DETR for Temporally Robust Moment Retrieval",
+      "authors": ["Seojeong Park", "Jiho Choi", "Kyungjune Baek", "Hyunjung Shim"],
+      "venue": "WACV",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "keywords": ["Moment Retrieval", "DETR", "Augmentation"],
+      "category": "cv"
+    },
     {
       "title": "Rethinking Direct Preference Optimization in Diffusion Models",
       "authors": ["Junyong Kang*", "Seohyun Lim*", "Kyungjune Baek", "Hyunjung Shim"],

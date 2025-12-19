@@ -90,10 +90,10 @@
     },
     {
       "name": "Seonho Lee",
-      "email": "seonho.lee@kaist.ac.kr",
+      "email": "glanceyes@kaist.ac.kr",
       "category": "masters",
       "image": "SeonhoLee.jpg",
-      "researchInterests": ["Computer Vision", "Machine Learning"],
+      "researchInterests": ["Vision-Language Understanding", "Generative AI"],
       "website": "https://glanceyes.github.io/"
     },
     {

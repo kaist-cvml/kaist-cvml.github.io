@@ -152,13 +152,6 @@
       "image": "SuinLee.jpg",
       "researchInterests": ["3D Computer Vision", "3D Generative Models"],
       "website": "https://adios42.github.io/"
-    },
-    {
-      "name": "Raehyuk Jung",
-      "email": "",
-      "category": "intern",
-      "image": "RaehyukJung.jpg",
-      "researchInterests": ["Computer Vision", "Machine Learning"]
     }
   ],
   "alumni": [

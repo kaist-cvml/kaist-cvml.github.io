@@ -24,7 +24,7 @@
       "category": "ml",
       "pdf_url": "https://arxiv.org/pdf/2512.13672",
       "code_url": "https://github.com/kunheek/dti",
-      "project_url": "https://kunheek.github.io/dti",
+      "project_url": "https://kunheek.github.io/dti"
     },
     {
       "title": "MomentMix Augmentation with Length-Aware DETR for Temporally Robust Moment Retrieval",

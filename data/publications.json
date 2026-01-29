@@ -14,6 +14,17 @@
 
   "publications": [
     {
+      "title": "What 'Not' to Detect: Negation-Aware VLMs via Structured Reasoning and Token Merging",
+      "authors": ["Inha Kang", "Youngsun Lim", "Seonho Lee", "Jiho Choi", "Junsuk Choe", "Hyunjung Shim"],
+      "venue": "ICLR",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "keywords": ["Vision-Language Models", "Multimodal", "Data-centric AI", "Token Merging"],
+      "category": "multimodal",
+      "pdf_url": "https://arxiv.org/abs/2510.13232"
+    },
+    {
       "title": "Directional Textual Inversion for Personalized Text-to-Image Generation",
       "authors": ["Kunhee Kim*", "NaHyeon Park*", "Kibeom Hong", "Hyunjung Shim"],
       "venue": "ICLR",

@@ -14,6 +14,19 @@
 
   "publications": [
     {
+      "title": "Directional Textual Inversion for Personalized Text-to-Image Generation",
+      "authors": ["Kunhee Kim*", "NaHyeon Park*", "Kibeom Hong", "Hyunjung Shim"],
+      "venue": "ICLR",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "keywords": ["Textual Inversion", "Personalization", "Text-to-Image"],
+      "category": "ml",
+      "pdf_url": "https://arxiv.org/pdf/2512.13672",
+      "code_url": "https://github.com/kunheek/dti",
+      "project_url": "https://kunheek.github.io/dti",
+    },
+    {
       "title": "MomentMix Augmentation with Length-Aware DETR for Temporally Robust Moment Retrieval",
       "authors": ["Seojeong Park", "Jiho Choi", "Kyungjune Baek", "Hyunjung Shim"],
       "venue": "WACV",

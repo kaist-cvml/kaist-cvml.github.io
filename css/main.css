@@ -1470,6 +1470,69 @@ body {
   text-align: center;
 }
 
+/* Patents Page */
+.patents-section {
+  padding: 50px 0;
+}
+
+.patent-group {
+  margin-bottom: 50px;
+}
+
+.patent-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.patent-item {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px 24px;
+  transition: box-shadow 0.3s ease;
+}
+
+.patent-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.patent-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.patent-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  font-size: 13px;
+  color: #666;
+}
+
+.patent-authors {
+  font-weight: 500;
+  color: #444;
+}
+
+.patent-details {
+  padding-left: 12px;
+  border-left: 2px solid #ff6b35;
+}
+
+.patent-status {
+  background: #f5f5f5;
+  color: #555;
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 /* Apply Page */
 .apply-section {
   padding: 50px 0;

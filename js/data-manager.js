@@ -8,7 +8,8 @@ class DataManager {
       publications: null,
       people: null,
       projects: null,
-      gallery: null
+      gallery: null,
+      patents: null
     };
     this.loadPromises = {};
   }
@@ -121,6 +122,23 @@ class DataManager {
           }
         ]
       };
+    } else if (type === 'patents') {
+      return {
+        categories: {
+          international: "International",
+          domestic: "Domestic"
+        },
+        patents: [
+          {
+            id: "fallback001",
+            title: "Sample Patent Title",
+            authors: ["Author A", "Author B"],
+            patent_no: "US Patent 0,000,000",
+            status: "Grant",
+            region: "international"
+          }
+        ]
+      };
     }
     return {};
   }
@@ -192,6 +210,15 @@ class DataManager {
     }
 
     return publications;
+  }
+
+  // Get patents
+  async getPatents() {
+    const data = await this.loadData('patents');
+    return {
+      categories: data.categories || {},
+      patents: data.patents || []
+    };
   }
 
   // Get unique years from publications (recent 5 years only)
@@ -485,7 +512,8 @@ class DataManager {
       publications: null,
       people: null,
       projects: null,
-      gallery: null
+      gallery: null,
+      patents: null
     };
     this.loadPromises = {};
   }

@@ -1,0 +1,152 @@
+{
+  "categories": {
+    "international": "International",
+    "domestic": "Domestic"
+  },
+  "patents": [
+    {
+      "id": "intl-001",
+      "title": "Apparatus for leveling person image and operating method thereof",
+      "authors": ["SY Kang", "MJ Kim", "MK Song", "HJ Shim", "GH Lee"],
+      "patent_no": "US Patent 11,915,513",
+      "status": "Grant",
+      "region": "international"
+    },
+    {
+      "id": "intl-002",
+      "title": "Image processor, lighting processor and method therefor",
+      "authors": ["HJ Shim", "DK Kim", "TH Rhee"],
+      "patent_no": "US Patent 9,563,959",
+      "status": "Grant",
+      "region": "international"
+    },
+    {
+      "id": "intl-003",
+      "title": "Method and apparatus for realistically reproducing eyeball",
+      "authors": ["TH Rhee", "SM Rhee", "HJ Shim", "DK Kim", "A Ghosh", "J Busch", "JY Chiang"],
+      "patent_no": "US Patent 9,443,343",
+      "status": "Grant",
+      "region": "international"
+    },
+    {
+      "id": "intl-004",
+      "title": "Method and apparatus for rendering three-dimensional (3D) object",
+      "authors": ["HJ Shim"],
+      "patent_no": "US Patent 9,443,345",
+      "status": "Grant",
+      "region": "international"
+    },
+    {
+      "id": "intl-005",
+      "title": "Apparatus and method for image matching between multiview cameras",
+      "authors": ["SK Lee", "HJ Shim", "DK Kim"],
+      "patent_no": "US Patent 9,349,073",
+      "status": "Grant",
+      "region": "international"
+    },
+    {
+      "id": "intl-006",
+      "title": "Apparatus and method for reconstructing super-resolution three-dimensional image from depth image",
+      "authors": ["SK Lee", "HJ Shim", "DK Kim"],
+      "patent_no": "US Patent 9,342,867",
+      "status": "Grant",
+      "region": "international"
+    },
+    {
+      "id": "intl-007",
+      "title": "Apparatus and method for processing 3D information",
+      "authors": ["HJ Shim", "SK Lee", "DK Kim"],
+      "patent_no": "US Patent 9,323,977",
+      "status": "Grant",
+      "region": "international"
+    },
+    {
+      "id": "intl-008",
+      "title": "Method and apparatus for acquiring geometry of specular object based on depth sensor",
+      "authors": ["HJ Shim", "SK Lee", "DK Kim"],
+      "patent_no": "US Patent 9,245,344",
+      "status": "Grant",
+      "region": "international"
+    },
+    {
+      "id": "intl-009",
+      "title": "Method and apparatus for obtaining lighting information and material information in image modeling system",
+      "authors": ["HJ Shim", "DK Kim", "SK Lee"],
+      "patent_no": "US Patent 9,035,964",
+      "status": "Grant",
+      "region": "international"
+    },
+    {
+      "id": "intl-010",
+      "title": "Apparatus and method for realistically expressing teeth",
+      "authors": ["TH Rhee", "SM Rhee", "HJ Shim", "DK Kim", "A Ghosh", "J Busch", "M Chiang"],
+      "patent_no": "US Patent 8,976,176",
+      "status": "Grant",
+      "region": "international"
+    },
+    {
+      "id": "intl-011",
+      "title": "Method and apparatus for rendering a three-dimensional object from a two-dimensional image",
+      "authors": ["HJ Shim"],
+      "patent_no": "US Patent 8,792,708",
+      "status": "Grant",
+      "region": "international"
+    },
+    {
+      "id": "intl-012",
+      "title": "Apparatus and method to correct image",
+      "authors": ["HJ Shim", "JY Sim", "DK Kim", "JH Ahn", "A Hornung", "M Gross", "R Adelsberger"],
+      "patent_no": "US Patent 8,743,349",
+      "status": "Grant",
+      "region": "international"
+    },
+    {
+      "id": "intl-013",
+      "title": "Apparatus and method for capturing light field geometry using multi-view camera",
+      "authors": ["SK Lee", "DK Kim", "HJ Shim"],
+      "patent_no": "US Patent App. 13/483,435",
+      "status": "Application",
+      "region": "international"
+    },
+    {
+      "id": "intl-014",
+      "title": "Method and apparatus for obtaining geometry information, lighting information and material information in image modeling system",
+      "authors": ["HJ Shim", "DK Kim", "SK Lee"],
+      "patent_no": "US Patent App. 13/443,158",
+      "status": "Application",
+      "region": "international"
+    },
+    {
+      "id": "dom-001",
+      "title": "컬러 카메라 및 깊이 카메라에 대한 촬영 영상 동기화 장치 및 방법",
+      "authors": ["방두현", "심현정"],
+      "patent_no": "10-2017-0004361",
+      "status": "2017.01.11.",
+      "region": "domestic"
+    },
+    {
+      "id": "dom-002",
+      "title": "영상 간의 특질 변환 시스템 및 그 방법",
+      "authors": ["양주영", "심현정"],
+      "patent_no": "10-2016-0178801",
+      "status": "2016.12.26.",
+      "region": "domestic"
+    },
+    {
+      "id": "dom-003",
+      "title": "의료영상장치 및 그의 영상 보정방법",
+      "authors": ["고영준", "백종덕", "심현정"],
+      "patent_no": "10-1698850",
+      "status": "2017-01-17 (등록)",
+      "region": "domestic"
+    },
+    {
+      "id": "dom-004",
+      "title": "감성 효과 생성을 위한 인물 영상 처리 장치 및 그 방법",
+      "authors": ["김경민", "심현정"],
+      "patent_no": "10-1653812",
+      "status": "2016.08.29.",
+      "region": "domestic"
+    }
+  ]
+}

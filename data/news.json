@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "news022",
+      "date": "2026-01-29",
+      "title": "2 Papers Accepted to ICLR 2026",
+      "content": "<strong>2 papers accepted to ICLR 2026</strong>.",
+      "category": "publication",
+      "featured": true,
+      "venue": "ICLR 2026"
+    },
+    {
       "id": "news021",
       "date": "2025-11-09",
       "title": "Rethinking Direct Preference Optimization in Diffusion Models Accepted",

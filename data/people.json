@@ -139,13 +139,6 @@
       "researchInterests": ["3D Computer Vision"]
     },
     {
-      "name": "Eunki Kim",
-      "email": "eunkikim@kaist.ac.kr",
-      "category": "masters",
-      "image": "EunkiKim.jpg",
-      "researchInterests": ["Multimodal", "Reasoning", "Alignment Training"]
-    },
-    {
       "name": "Suin Lee",
       "email": "suinlee@kaist.ac.kr",
       "category": "intern",
@@ -334,6 +327,16 @@
       "nextPosition": "FASOO",
       "image": "seohyun_lim.jpg",
       "graduationDate": "2025-08"
+    }, 
+    {
+      "name": "Eunki Kim",
+      "email": "eunkikim@kaist.ac.kr",
+      "title": "Masters",
+      "nextPosition": "SKT",
+      "category": "masters",
+      "image": "EunkiKim.jpg",
+      "graduationDate": "2026-02"
+
     }
   ]
 }

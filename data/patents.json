@@ -7,9 +7,9 @@
     {
       "id": "intl-001",
       "title": "Apparatus for leveling person image and operating method thereof",
-      "authors": ["SY Kang", "MJ Kim", "MK Song", "HJ Shim", "GH Lee"],
-      "patent_no": "US Patent 11,915,513",
-      "status": "Grant",
+      "authors": ["NCSOFT CORPORATION", "INDUSTRY-ACADEMIC COOPERATION FOUNDATION, YONSEI UNIVERSITY"],
+      "patent_no": "US 11,915,513 B2; US 2022/0375254 A1",
+      "status": "Grant / Application",
       "region": "international"
     },
     {
@@ -146,6 +146,38 @@
       "authors": ["김경민", "심현정"],
       "patent_no": "10-1653812",
       "status": "2016.08.29.",
+      "region": "domestic"
+    },
+    {
+      "id": "dom-005",
+      "title": "로컬 조건 GAN 기반의 학습 장치 및 방법",
+      "authors": ["연세대학교 산학협력단"],
+      "patent_no": "출원 1020210181945 / 등록 1028542200000",
+      "status": "출원 2021.12.17. / 등록 2025.08.29.",
+      "region": "domestic"
+    },
+    {
+      "id": "dom-006",
+      "title": "모조 마스크 기반 약지도 시맨틱 분할 장치 및 방법",
+      "authors": ["연세대학교 산학협력단"],
+      "patent_no": "출원 1020210124495 / 등록 1027810170000",
+      "status": "출원 2021.09.17. / 등록 2025.03.10.",
+      "region": "domestic"
+    },
+    {
+      "id": "dom-007",
+      "title": "자기 집중 모듈 및 이를 이용한 정규화 방법",
+      "authors": ["연세대학교 산학협력단"],
+      "patent_no": "출원 1020200147822 / 등록 1025627310000",
+      "status": "출원 2020.11.06. / 등록 2023.07.28.",
+      "region": "domestic"
+    },
+    {
+      "id": "dom-008",
+      "title": "컴퓨터 단층촬영 영상 재구성 장치 및 방법",
+      "authors": ["연세대학교 산학협력단"],
+      "patent_no": "출원 1020220061284 / 등록 1027776980000",
+      "status": "출원 2022.05.19. / 등록 2025.03.04.",
       "region": "domestic"
     }
   ]

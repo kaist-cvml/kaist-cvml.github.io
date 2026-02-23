@@ -19,7 +19,8 @@
       "venue": "CVPR",
       "year": 2026,
       "type": "conference",
-      "status": "accepted"
+      "status": "accepted", 
+      "category": "multimodal"
     },
     {
       "title": "Real-Time Long Horizon Air Quality Forecasting via Group-Relative Policy Optimization",
@@ -43,7 +44,7 @@
       "type": "conference",
       "status": "accepted",
       "keywords": ["Dense Correspondence", "MultiModal"],
-      "category": "cv"
+      "category": "3D"
     },
 
     {
@@ -52,7 +53,8 @@
       "venue": "CVPR",
       "year": 2026,
       "type": "conference",
-      "status": "accepted"
+      "status": "accepted", 
+      "category": "multimodal"
     },
     
     {

@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "news023",
+      "date": "2026-02-23",
+      "title": "4 Papers Accepted to CVPR 2026",
+      "content": "<strong>4 papers accepted to CVPR 2026</strong>.",
+      "category": "publication",
+      "featured": true,
+      "venue": "CVPR 2026"
+    },
+    {
       "id": "news022",
       "date": "2026-01-29",
       "title": "2 Papers Accepted to ICLR 2026",

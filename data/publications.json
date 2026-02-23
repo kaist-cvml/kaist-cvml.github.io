@@ -8,7 +8,8 @@
     "ml": "ML",
     "nlp": "NLP",
     "medical_imaging": "Medical Imaging",
-    "multimodal": "Multi-Modal Learning"
+    "multimodal": "Multi-Modal Learning", 
+    "3D": "3D Computer Vision"
   },
 
 
@@ -204,7 +205,8 @@
       "pdf_url": "https://arxiv.org/pdf/2407.11394",
       "code_url": "https://github.com/kaist-cvml/DreamCatalyst",
       "project_url": "https://dream-catalyst.github.io",
-      "category": "cv"
+      "category": "cv", 
+      "category": "3D"
     },
     {
       "title": "Label-Augmented Dataset Distillation",

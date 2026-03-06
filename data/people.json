@@ -60,26 +60,11 @@
       "researchInterests": ["Multimodal"]
     },
     {
-      "name": "Hojun Choi",
-      "email": "hchoi256@kaist.ac.kr",
-      "category": "phd",
-      "image": "HojunChoi.jpg",
-      "researchInterests": ["Open-Vocabulary", "Object Detection"]
-    },
-    {
       "name": "Junyong Kang",
       "email": "jykang@kaist.ac.kr",
       "category": "phd",
       "image": "JunyongKang.jpg",
       "researchInterests": ["Representation learning", "Explainable AI"]
-    },
-    {
-      "name": "Jiwook Kim",
-      "email": "tom919@kaist.ac.kr",
-      "category": "phd",
-      "image": "JiwookKim.jpg",
-      "researchInterests": ["High-dimensional Vision", "Vision Foundation Model", "World Model"],
-      "website": "https://jw-kim.netlify.app/"
     },
     {
       "name": "Seonho Lee",
@@ -130,6 +115,21 @@
       "category": "masters",
       "image": "JinwooLee.jpg",
       "researchInterests": ["3D Computer Vision"]
+    },
+    {
+      "name": "Hojun Choi",
+      "email": "hchoi256@kaist.ac.kr",
+      "category": "phd",
+      "image": "HojunChoi.jpg",
+      "researchInterests": ["Open-Vocabulary", "Object Detection"]
+    },
+    {
+      "name": "Jiwook Kim",
+      "email": "tom919@kaist.ac.kr",
+      "category": "phd",
+      "image": "JiwookKim.jpg",
+      "researchInterests": ["High-dimensional Vision", "Vision Foundation Model", "World Model"],
+      "website": "https://jw-kim.netlify.app/"
     },
     {
       "name": "Suin Lee",

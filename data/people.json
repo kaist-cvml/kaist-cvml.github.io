@@ -69,7 +69,7 @@
     {
       "name": "Hojun Choi",
       "email": "hchoi256@kaist.ac.kr",
-      "category": "masters",
+      "category": "phd",
       "image": "HojunChoi.jpg",
       "researchInterests": ["Open-Vocabulary", "Object Detection"]
     },
@@ -83,7 +83,7 @@
     {
       "name": "Jiwook Kim",
       "email": "tom919@kaist.ac.kr",
-      "category": "masters",
+      "category": "phd",
       "image": "JiwookKim.jpg",
       "researchInterests": ["High-dimensional Vision", "Vision Foundation Model", "World Model"],
       "website": "https://jw-kim.netlify.app/"
@@ -141,7 +141,7 @@
     {
       "name": "Suin Lee",
       "email": "suinlee@kaist.ac.kr",
-      "category": "intern",
+      "category": "phd",
       "image": "SuinLee.jpg",
       "researchInterests": ["3D Computer Vision", "3D Generative Models"],
       "website": "https://adios42.github.io/"

@@ -13,13 +13,6 @@
   },
   "current": [
     {
-      "name": "Seongjong Song",
-      "email": "bell@yonsei.ac.kr",
-      "category": "phd",
-      "image": "SeongjongSong.png",
-      "researchInterests": ["Image restoration"]
-    },
-    {
       "name": "Kunhee Kim",
       "email": "kunhee.kim@kaist.ac.kr",
       "category": "phd",
@@ -337,6 +330,15 @@
       "image": "EunkiKim.jpg",
       "graduationDate": "2026-02"
 
+    }, 
+    {
+      "name": "Seongjong Song",
+      "email": "bell@yonsei.ac.kr",
+      "title": "phd",
+      "nextPosition": "TBD", 
+      "image": "SeongjongSong.png",
+      "graduationDate":"2026-02", 
+      "category": "phd"
     }
   ]
 }

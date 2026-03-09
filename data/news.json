@@ -1,13 +1,22 @@
 {
   "news": [
     {
-      "id": "news023",
+      "id": "news024",
       "date": "2026-02-23",
       "title": "4 Papers Accepted to CVPR 2026",
       "content": "<strong>4 papers accepted to CVPR 2026</strong>.",
       "category": "publication",
       "featured": true,
       "venue": "CVPR 2026"
+    },
+    {
+      "id": "news023",
+      "date": "2026-02-06",
+      "title": "Inha Kang and Hojun Choi Win Awards at IPIU 2026",
+      "content": "<strong>Big congratulations! Inha Kang received the Grand Prize and Silver Prize, and Hojun Choi was honored with the Best Poster Award at IPIU 2026.</strong>.",
+      "category": "award",
+      "featured": true,
+      "venue": "IPIU 2026"
     },
     {
       "id": "news022",

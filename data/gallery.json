@@ -6,6 +6,36 @@
   },
   "gallery_items": [
     {
+      "title": "IPIU 2026 Workshop",
+      "description": "IPIU 2026에서 진행한 워크샵",
+      "category": "workshop",
+      "date": "2026-02",
+      "image": "Conference_IPIU_2026.jpg",
+      "alt_text": "IPIU 2026 Workshop",
+      "featured": true,
+      "tags": ["ipiu", "workshop", "presentation"]
+    },
+    {
+      "title": "IPIU 2026 Workshop Prizes",
+      "description": "IPIU 2026에서 진행한 워크샵에서의 수상 (대상[강인하], 은상[강인하], 최우수 포스터상[최호준])",
+      "category": "workshop",
+      "date": "2026-02",
+      "image": "Conference_IPIU_2026_Award.jpg",
+      "alt_text": "IPIU 2026 Workshop Prizes",
+      "featured": true,
+      "tags": ["ipiu", "workshop", "award"]
+    },
+    {
+      "title": "교수님 생신 파티",
+      "description": "교수님의 생신을 축하하는 파티",
+      "category": "lab-life",
+      "date": "2025-11",
+      "image": "LabLife_Professor_BHD_1.jpg",
+      "alt_text": "Professor's Birthday Party",
+      "featured": false,
+      "tags": ["dinner", "lab-life", "celebration"]
+    },
+    {
       "title": "KCCV 2025 Workshop",
       "description": "KCCV 2025에서 진행한 워크샵",
       "category": "workshop",

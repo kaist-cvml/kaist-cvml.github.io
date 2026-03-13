@@ -67,14 +67,6 @@
       "researchInterests": ["Representation learning", "Explainable AI"]
     },
     {
-      "name": "Seonho Lee",
-      "email": "glanceyes@kaist.ac.kr",
-      "category": "masters",
-      "image": "SeonhoLee.jpg",
-      "researchInterests": ["Vision-Language Understanding", "Generative AI"],
-      "website": "https://glanceyes.github.io/"
-    },
-    {
       "name": "Jaeyo Shin",
       "email": "jaeyo_shin@kaist.ac.kr",
       "category": "masters",
@@ -339,6 +331,16 @@
       "image": "SeongjongSong.png",
       "graduationDate":"2026-02", 
       "category": "phd"
+    }, 
+    {
+      "name": "Seonho Lee",
+      "email": "glanceyes@kaist.ac.kr",
+      "nextPosition": "KRAFTON AI",
+      "title": "masters",
+      "image": "SeonhoLee.jpg",
+      "graduationDate":"2026-02", 
+      "website": "https://glanceyes.github.io/", 
+      "category": "masters"
     }
   ]
 }

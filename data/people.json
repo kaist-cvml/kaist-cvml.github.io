@@ -185,7 +185,8 @@
       "title": "PhD",
       "nextPosition": "Assistant Professor at Sogang University",
       "image": "student-placeholder.svg",
-      "graduationDate": "2020-08"
+      "graduationDate": "2020-08",
+      "website": "https://sites.google.com/site/junsukchoe/"
     },
     {
       "name": "Song Park",
@@ -194,7 +195,8 @@
       "title": "PhD",
       "nextPosition": "NAVER AI Lab",
       "image": "student-placeholder.svg",
-      "graduationDate": "2022-02"
+      "graduationDate": "2022-02",
+      "website": "https://8uos.github.io/"
     },
     {
       "name": "Chanyeong Shin",
@@ -212,7 +214,8 @@
       "title": "PhD",
       "nextPosition": "Assistant Professor at Sejong University",
       "image": "student-placeholder.svg",
-      "graduationDate": "2023-02"
+      "graduationDate": "2023-02",
+      "website": "https://friedronaldo.github.io/"
     },
     {
       "name": "Youngjun Ko",
@@ -284,7 +287,8 @@
       "title": "Masters",
       "nextPosition": "KRAFTON AI",
       "image": "hyogon_ryu.jpg",
-      "graduationDate": "2025-02"
+      "graduationDate": "2025-02",
+      "website": "https://ugonfor.kr/"
     },
     {
       "name": "Yunji Jung",
@@ -302,7 +306,8 @@
       "title": "Masters",
       "nextPosition": "PhD student at Boston University",
       "image": "student-placeholder.svg",
-      "graduationDate": "2025-08"
+      "graduationDate": "2025-08",
+      "website": "https://sgt-lim.github.io/"
     },
     {
       "name": "Seohyun Lim",
@@ -322,24 +327,24 @@
       "image": "EunkiKim.jpg",
       "graduationDate": "2026-02"
 
-    }, 
+    },
     {
       "name": "Seongjong Song",
       "email": "bell@yonsei.ac.kr",
-      "title": "phd",
-      "nextPosition": "TBD", 
+      "title": "PhD",
+      "nextPosition": "TBD",
       "image": "SeongjongSong.png",
-      "graduationDate":"2026-02", 
+      "graduationDate":"2026-02",
       "category": "phd"
-    }, 
+    },
     {
       "name": "Seonho Lee",
       "email": "glanceyes@kaist.ac.kr",
       "nextPosition": "KRAFTON AI",
-      "title": "masters",
+      "title": "Masters",
       "image": "SeonhoLee.jpg",
-      "graduationDate":"2026-02", 
-      "website": "https://glanceyes.github.io/", 
+      "graduationDate":"2026-02",
+      "website": "https://glanceyes.github.io/",
       "category": "masters"
     }
   ]

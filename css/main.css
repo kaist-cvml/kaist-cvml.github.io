@@ -774,6 +774,7 @@ body {
   border-radius: 6px;
   transition: all 0.2s ease;
   border: 1px solid #e8e8e8;
+  position: relative;
 }
 
 .alumni-card:hover {
@@ -833,6 +834,25 @@ body {
   font-size: 11px;
   color: #999;
   margin-bottom: 0;
+}
+
+.alumni-card .person-links {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.alumni-card .person-link {
+  font-size: 11px;
+  color: #ff6b35;
+  border-color: #ff6b35;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+.alumni-card .person-link:hover {
+  background: #ff6b35;
+  color: #fff;
 }
 
 /* Compact Grid for Alumni */
@@ -1468,6 +1488,84 @@ body {
 
 .gallery-actions {
   text-align: center;
+}
+
+/* Gallery Modal / Lightbox */
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  /* background: rgba(0, 0, 0, 0.85); */
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+  animation: modalFadeIn 0.2s ease;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.modal-img {
+  display: block;
+  max-width: 90vw;
+  max-height: 75vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.modal-caption {
+  width: 100%;
+  padding: 14px 20px;
+  color: #eee;
+  background: #1a1a1a;
+}
+
+.modal-caption h4 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.modal-caption p {
+  margin: 0;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 26px;
+  line-height: 1;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.modal-close:hover {
+  opacity: 1;
 }
 
 /* Patents Page */

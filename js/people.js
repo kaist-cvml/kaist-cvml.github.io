@@ -130,6 +130,7 @@ class PeoplePage {
           ${graduationYear ? `<p class="graduation-info">
             <strong>Graduated:</strong> ${this.formatGraduationDate(person.graduationDate)}
           </p>` : ''}
+          ${person.website ? `<div class="person-links"><a href="${person.website}" target="_blank" class="person-link">Website</a></div>` : ''}
         </div>
       </div>
     `;

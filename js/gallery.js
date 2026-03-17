@@ -1,10 +1,15 @@
 // Gallery Page JavaScript - JSON-based management
+const GALLERY_PAGE_SIZE = 9;
+
 document.addEventListener('DOMContentLoaded', async function () {
   const galleryContainer = document.querySelector('.gallery-grid');
   const filterContainer = document.querySelector('.gallery-filters');
   const searchInput = document.querySelector('.gallery-search input');
+  const loadMoreBtn = document.getElementById('load-more-btn');
 
   let allGalleryItems = [];
+  let filteredGalleryItems = [];
+  let displayedCount = 0;
   let currentFilter = 'all';
   let currentSearch = '';
 
@@ -22,7 +27,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         await createFilterButtons();
       }
 
-      // Display gallery items
+      // Display initial gallery items
       displayGalleryItems(allGalleryItems);
 
       // Setup event listeners
@@ -49,17 +54,49 @@ document.addEventListener('DOMContentLoaded', async function () {
     filterContainer.innerHTML = filterButtonsHTML;
   }
 
-  // Display gallery items in a grid layout
-  function displayGalleryItems(items) {
+  // Render the next batch of items (append to grid)
+  function renderNextBatch() {
     if (!galleryContainer) return;
 
-    if (items.length === 0) {
+    if (filteredGalleryItems.length === 0) {
       galleryContainer.innerHTML = '<div class="no-results">No gallery items found matching your criteria.</div>';
       return;
     }
 
-    const html = items.map(item => createGalleryItemHTML(item)).join('');
-    galleryContainer.innerHTML = html;
+    const nextItems = filteredGalleryItems.slice(displayedCount, displayedCount + GALLERY_PAGE_SIZE);
+    const html = nextItems.map(item => createGalleryItemHTML(item)).join('');
+    galleryContainer.insertAdjacentHTML('beforeend', html);
+    displayedCount += nextItems.length;
+  }
+
+  // Reset and re-render gallery from scratch
+  function displayGalleryItems(items) {
+    if (!galleryContainer) return;
+    galleryContainer.innerHTML = '';
+    filteredGalleryItems = items;
+    displayedCount = 0;
+
+    if (items.length === 0) {
+      galleryContainer.innerHTML = '<div class="no-results">No gallery items found matching your criteria.</div>';
+      updateLoadMoreButton();
+      return;
+    }
+
+    renderNextBatch();
+    updateLoadMoreButton();
+  }
+
+  // Show/hide load more button
+  function updateLoadMoreButton() {
+    if (!loadMoreBtn) return;
+    const hasMore = displayedCount < filteredGalleryItems.length;
+    loadMoreBtn.parentElement.style.display = hasMore ? '' : 'none';
+  }
+
+  // Load more gallery items
+  function loadMoreGallery() {
+    renderNextBatch();
+    updateLoadMoreButton();
   }
 
   function formatYearMonthOnly(dateStr, locale = 'ko-KR') {
@@ -122,6 +159,11 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   // Setup event listeners
   function setupEventListeners() {
+    // Load more button
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', loadMoreGallery);
+    }
+
     // Filter buttons
     if (filterContainer) {
       filterContainer.addEventListener('click', function (e) {
@@ -184,11 +226,15 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 
     displayGalleryItems(filteredItems);
+    updateLoadMoreButton();
   }
 
-  // Handle gallery image clicks (basic implementation)
+  // Handle gallery image clicks
   function handleImageClick(img) {
-    // Simple implementation - could be enhanced with a proper lightbox
+    const item = img.closest('.gallery-item');
+    const title = item ? item.querySelector('.gallery-title')?.textContent : img.alt;
+    const description = item ? item.querySelector('.gallery-description')?.textContent : '';
+
     const modal = document.createElement('div');
     modal.className = 'gallery-modal';
     modal.innerHTML = `
@@ -196,26 +242,23 @@ document.addEventListener('DOMContentLoaded', async function () {
         <span class="modal-close">&times;</span>
         <img src="${img.src}" alt="${img.alt}" class="modal-img">
         <div class="modal-caption">
-          <h4>${img.alt}</h4>
+          <h4>${title || img.alt}</h4>
+          ${description ? `<p>${description}</p>` : ''}
         </div>
       </div>
     `;
 
     document.body.appendChild(modal);
 
-    // Close modal functionality
-    modal.addEventListener('click', function (e) {
-      if (e.target === modal || e.target.classList.contains('modal-close')) {
-        document.body.removeChild(modal);
-      }
+    const close = () => document.body.removeChild(modal);
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal || e.target.classList.contains('modal-close')) close();
     });
 
-    // Close on escape key
     document.addEventListener('keydown', function onEscapeKey(e) {
       if (e.key === 'Escape') {
-        if (document.body.contains(modal)) {
-          document.body.removeChild(modal);
-        }
+        if (document.body.contains(modal)) close();
         document.removeEventListener('keydown', onEscapeKey);
       }
     });

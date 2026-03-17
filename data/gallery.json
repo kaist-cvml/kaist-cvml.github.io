@@ -159,6 +159,178 @@
       "alt_text": "Summer Workshop Seminar",
       "featured": false,
       "tags": ["workshop", "seminar", "summer"]
+    },
+    {
+      "title": "CVML 연말 회식 2022",
+      "description": "한 해를 마무리하는 랩 연말 회식",
+      "category": "lab-life",
+      "date": "2022-12",
+      "image": "LabLife_YearEnd_2022.jpg",
+      "alt_text": "CVML Year-End Gathering 2022",
+      "featured": false,
+      "tags": ["dinner", "lab-life", "celebration"]
+    },
+    {
+      "title": "ICPR 2022",
+      "description": "ICPR 2022 학회 발표 (이승호, 백경준)",
+      "category": "conferences",
+      "date": "2022-08",
+      "image": "Conference_ICPR_2022.png",
+      "alt_text": "ICPR 2022",
+      "featured": false,
+      "tags": ["icpr", "conference"],
+      "venue": "ICPR 2022"
+    },
+    {
+      "title": "IJCAI 2022",
+      "description": "IJCAI 2022 포스터 발표 (백경준)",
+      "category": "conferences",
+      "date": "2022-07",
+      "image": "Conference_IJCAI_2022.png",
+      "alt_text": "IJCAI 2022",
+      "featured": false,
+      "tags": ["ijcai", "conference"],
+      "venue": "IJCAI 2022"
+    },
+    {
+      "title": "CVPR 2022",
+      "description": "CVPR 2022 포스터 발표 (이민현, 김동섭, 백경준)",
+      "category": "conferences",
+      "date": "2022-06",
+      "image": "Conference_CVPR_2022.jpg",
+      "alt_text": "CVPR 2022",
+      "featured": false,
+      "tags": ["cvpr", "conference"],
+      "venue": "CVPR 2022"
+    },
+    {
+      "title": "CVPR 2022 Poster",
+      "description": "CVPR 2022 포스터 발표 (이민현, 김동섭, 백경준)",
+      "category": "conferences",
+      "date": "2022-06",
+      "image": "Conference_CVPR_2022_Poster.png",
+      "alt_text": "CVPR 2022 Poster",
+      "featured": false,
+      "tags": ["cvpr", "poster", "conference"],
+      "venue": "CVPR 2022"
+    },
+    {
+      "title": "스승의 날 및 제1회 홈커밍데이",
+      "description": "스승의 날 기념 및 제1회 홈커밍데이 모임",
+      "category": "lab-life",
+      "date": "2020-05",
+      "image": "LabLife_Homecoming_2020.png",
+      "alt_text": "Teacher's Day and Homecoming 2020",
+      "featured": false,
+      "tags": ["lab-life", "celebration", "alumni"]
+    },
+    {
+      "title": "AAAI 2020",
+      "description": "AAAI 2020 포스터 발표 (백경준, 이민현)",
+      "category": "conferences",
+      "date": "2020-02",
+      "image": "Conference_AAAI_2020.png",
+      "alt_text": "AAAI 2020",
+      "featured": false,
+      "tags": ["aaai", "conference"],
+      "venue": "AAAI 2020"
+    },
+    {
+      "title": "방두현 박사 졸업식",
+      "description": "방두현 박사 졸업식",
+      "category": "lab-life",
+      "date": "2020-08",
+      "image": "LabLife_Graduation_2020.png",
+      "alt_text": "PhD Graduation 2020",
+      "featured": false,
+      "tags": ["graduation", "lab-life", "celebration"]
+    },
+    {
+      "title": "연구실 모임 2019",
+      "description": "랩 구성원들과의 모임",
+      "category": "lab-life",
+      "date": "2019-12",
+      "image": "LabLife_Gathering_2019_2.jpg",
+      "alt_text": "Lab Gathering 2019",
+      "featured": false,
+      "tags": ["lab-life", "gathering"]
+    },
+    {
+      "title": "CVPR 2019 Oral",
+      "description": "CVPR 2019 Oral 발표 (최준석)",
+      "category": "conferences",
+      "date": "2019-06",
+      "image": "Conference_CVPR_2019.png",
+      "alt_text": "CVPR 2019 Oral",
+      "featured": false,
+      "tags": ["cvpr", "oral", "conference"],
+      "venue": "CVPR 2019"
+    },
+    {
+      "title": "CVPR 2019 (2)",
+      "description": "CVPR 2019 학회 참가",
+      "category": "conferences",
+      "date": "2019-06",
+      "image": "Conference_CVPR_2019_2.png",
+      "alt_text": "CVPR 2019 (2)",
+      "featured": false,
+      "tags": ["cvpr", "conference"],
+      "venue": "CVPR 2019"
+    },
+    {
+      "title": "IPIU 2019",
+      "description": "IPIU 2019 행사 및 신입생 환영회",
+      "category": "conferences",
+      "date": "2019-02",
+      "image": "Conference_IPIU_2019.jpg",
+      "alt_text": "IPIU 2019",
+      "featured": false,
+      "tags": ["ipiu", "conference"],
+      "venue": "IPIU 2019"
+    },
+    {
+      "title": "ACCV 2018",
+      "description": "ACCV 2018 Oral 발표 (백경준) 및 Poster 발표 (송성종)",
+      "category": "conferences",
+      "date": "2018-12",
+      "image": "Conference_ACCV_2018_1.png",
+      "alt_text": "ACCV 2018",
+      "featured": false,
+      "tags": ["accv", "conference"],
+      "venue": "ACCV 2018"
+    },
+    {
+      "title": "ACCV 2018 (2)",
+      "description": "ACCV 2018 Oral 발표 (백경준) 및 Poster 발표 (송성종)",
+      "category": "conferences",
+      "date": "2018-12",
+      "image": "Conference_ACCV_2018_2.png",
+      "alt_text": "ACCV 2018 (2)",
+      "featured": false,
+      "tags": ["accv", "conference"],
+      "venue": "ACCV 2018"
+    },
+    {
+      "title": "ICML 2018",
+      "description": "ICML 2018 Short Talk 발표 (방두현)",
+      "category": "conferences",
+      "date": "2018-07",
+      "image": "Conference_ICML_2018.png",
+      "alt_text": "ICML 2018",
+      "featured": false,
+      "tags": ["icml", "conference"],
+      "venue": "ICML 2018"
+    },
+    {
+      "title": "IPIU 2018",
+      "description": "IPIU 2018 행사 및 신입생 환영회",
+      "category": "conferences",
+      "date": "2018-02",
+      "image": "Conference_IPIU_2018.png",
+      "alt_text": "IPIU 2018",
+      "featured": false,
+      "tags": ["ipiu", "conference"],
+      "venue": "IPIU 2018"
     }
   ]
 }

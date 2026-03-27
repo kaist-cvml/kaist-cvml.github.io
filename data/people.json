@@ -78,7 +78,8 @@
       "email": "rkswlsj13@kaist.ac.kr",
       "category": "phd",
       "image": "InhaKang.jpg",
-      "researchInterests": ["Vision Language Models", "Multimodal"]
+      "researchInterests": ["Vision Language Models", "Multimodal"],
+      "website":"https://2na-97.github.io/"
     },
     {
       "name": "Wonjeong Ryu",

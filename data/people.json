@@ -57,6 +57,7 @@
       "email": "seojeong.park@kaist.ac.kr",
       "category": "phd",
       "image": "SeojeongPark.jpg",
+      "website": "https://sjpark5800.github.io/",
       "researchInterests": ["Multimodal"]
     },
     {
@@ -335,7 +336,6 @@
       "title": "PhD",
       "nextPosition": "TBD",
       "image": "SeongjongSong.png",
-      "website": "https://sjpark5800.github.io/",
       "graduationDate":"2026-02",
       "category": "phd"
     },

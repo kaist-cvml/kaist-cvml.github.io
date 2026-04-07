@@ -102,6 +102,8 @@
       "year": 2026,
       "type": "conference",
       "status": "accepted",
+      "pdf_url": " https://arxiv.org/abs/2412.20816", 
+      "project_url": " https://github.com/sjpark5800/LA-DETR",
       "keywords": ["Moment Retrieval", "DETR", "Augmentation"],
       "category": "cv"
     },

@@ -8,19 +8,31 @@
     "ml": "ML",
     "nlp": "NLP",
     "medical_imaging": "Medical Imaging",
-    "multimodal": "Multi-Modal Learning", 
+    "multimodal": "Multi-Modal Learning",
     "3D": "3D Computer Vision"
   },
 
 
   "publications": [
     {
+      "title": "PosterForest: Hierarchical Multi-Agent Collaboration for Scientific Poster Generation",
+      "authors": ["Jiho Choi*", "Seojeong Park*", "Seongjong Song", "Hyunjung Shim"],
+      "venue": "ACL",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "keywords": ["Scientific Poster Generation", "Multi-Agent", "Multimodal LLM"],
+      "category": "nlp",
+      "pdf_url": "https://arxiv.org/abs/2508.21720",
+      "code_url": "https://github.com/kaist-cvml/poster-forest"
+    },
+    {
       "title": "Interpretable Debiasing of Vision-Language Models for Social Fairness",
       "authors": ["Na Min An", "Yoonna Jang", "Yusuke Hirota", "Ryo Hachiuma", "Isabelle Augenstein", "Hyunjung Shim"],
       "venue": "CVPR",
       "year": 2026,
       "type": "conference",
-      "status": "accepted", 
+      "status": "accepted",
       "keywords": ["Vision-Language Models", "AI Fairness", "Interpretability"],
       "category": "multimodal"
     },
@@ -38,7 +50,7 @@
       "project_url": "https://huggingface.co/datasets/2na-97/FAKER-Air"
     },
 
-    { 
+    {
       "title": "SGSoft: Learning Fused Semantic-Geometric Features for 3D Shape Correspondence via Template-Guided Soft Signals",
       "authors": ["Soyeon Yoon", "Chang Wook Seo", "Hyunjung Shim"],
       "venue": "CVPR",
@@ -55,11 +67,10 @@
       "venue": "CVPR",
       "year": 2026,
       "type": "conference",
-      "status": "accepted", 
+      "status": "accepted",
       "keywords": ["Vision-Language Models", "Benchmark and Evalutaion", "Cultural Awareness"],
       "category": "multimodal"
     },
-    
     {
       "title": "What 'Not' to Detect: Negation-Aware VLMs via Structured Reasoning and Token Merging",
       "authors": ["Inha Kang", "Youngsun Lim", "Seonho Lee", "Jiho Choi", "Junsuk Choe", "Hyunjung Shim"],

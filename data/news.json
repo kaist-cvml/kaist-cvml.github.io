@@ -19,6 +19,15 @@
       "venue": "IPIU 2026"
     },
     {
+      "id": "news025",
+      "date": "2026-04-07",
+      "title": "PosterForest Accepted to ACL 2026",
+      "content": "The paper \"<strong>PosterForest: Hierarchical Multi-Agent Collaboration for Scientific Poster Generation</strong>\" is accepted to <strong>ACL 2026</strong>.",
+      "category": "publication",
+      "featured": true,
+      "venue": "ACL 2026"
+    },
+    {
       "id": "news022",
       "date": "2026-01-29",
       "title": "2 Papers Accepted to ICLR 2026",

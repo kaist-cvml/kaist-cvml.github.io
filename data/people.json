@@ -13,14 +13,6 @@
   },
   "current": [
     {
-      "name": "Kunhee Kim",
-      "email": "kunhee.kim@kaist.ac.kr",
-      "category": "phd",
-      "image": "KunheeKim.JPG",
-      "researchInterests": ["Generative models"],
-      "website": "https://kunheek.github.io"
-    },
-    {
       "name": "NaHyeon Park",
       "email": "julia19@kaist.ac.kr",
       "category": "phd",

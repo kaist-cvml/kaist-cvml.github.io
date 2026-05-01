@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "news026",
+      "date": "2026-05-01",
+      "title": "Paper Accepted to ICML 2026",
+      "content": "The paper \"<strong>Mitigating Perceptual Judgment Bias in Multimodal LLM-as-a-Judge via Perceptual Perturbation and Reward Modeling</strong>\" is accepted to <strong>ICML 2026</strong>.",
+      "category": "publication",
+      "featured": true,
+      "venue": "ICML 2026"
+    },
+    {
       "id": "news024",
       "date": "2026-02-23",
       "title": "4 Papers Accepted to CVPR 2026",

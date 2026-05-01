@@ -15,6 +15,16 @@
 
   "publications": [
     {
+      "title": "Mitigating Perceptual Judgment Bias in Multimodal LLM-as-a-Judge via Perceptual Perturbation and Reward Modeling",
+      "authors": ["Seojeong Park*", "Jiho Choi*", "Junyong Kang", "Seonho Lee", "Jaeyo Shin", "Hyunjung Shim"],
+      "venue": "ICML",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "keywords": ["LLM-as-a-Judge", "Multimodal LLM", "Reward Modeling", "Perceptual Bias"],
+      "category": "multimodal"
+    },
+    {
       "title": "PosterForest: Hierarchical Multi-Agent Collaboration for Scientific Poster Generation",
       "authors": ["Jiho Choi*", "Seojeong Park*", "Seongjong Song", "Hyunjung Shim"],
       "venue": "ACL",

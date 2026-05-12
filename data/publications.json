@@ -1,7 +1,7 @@
 {
   "venues": {
     "conferences": ["CVPR", "ICCV", "ECCV", "NeurIPS", "ICML", "ICLR", "EMNLP", "EMNLP Findings", "ACL", "AAAI", "IJCAI", "WACV", "ICIP", "IROS"],
-    "journals": ["IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI)", "Medical Image Analysis", "Pattern Recognition", "Information Sciences", "Medical Physics"]
+    "journals": ["IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI)", "Transactions on Machine Learning Research", "Medical Image Analysis", "Pattern Recognition", "Information Sciences", "Medical Physics"]
   },
   "categories": {
     "cv": "CV",
@@ -23,6 +23,18 @@
       "status": "accepted",
       "keywords": ["LLM-as-a-Judge", "Multimodal LLM", "Reward Modeling", "Perceptual Bias"],
       "category": "multimodal"
+    },
+    {
+      "title": "Boosting Text Encoder for Personalized Text-to-Image Generation",
+      "authors": ["NaHyeon Park*", "Kunhee Kim*", "Hyunjung Shim"],
+      "venue": "Transactions on Machine Learning Research",
+      "year": 2026,
+      "type": "journal",
+      "status": "accepted",
+      "keywords": ["Text-to-Image", "Personalization", "Diffusion Models", "Text Encoder"],
+      "category": "ml",
+      "pdf_url": "https://openreview.net/pdf?id=hiZzk1nHuV",
+      "project_url": "https://openreview.net/forum?id=hiZzk1nHuV"
     },
     {
       "title": "PosterForest: Hierarchical Multi-Agent Collaboration for Scientific Poster Generation",

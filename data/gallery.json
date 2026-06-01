@@ -6,6 +6,16 @@
   },
   "gallery_items": [
     {
+      "title": "스승의날 홈커밍",
+      "description": "교수님 스승의날 홈커밍 행사",
+      "category": "lab-life",
+      "date": "2026-05",
+      "image": "LabLife_Homecoming_2026.png",
+      "alt_text": "Teachers' Day Homecoming 2026",
+      "featured": false,
+      "tags": ["lab-life", "celebration", "homecoming", "alumni"]
+    },
+    {
       "title": "IPIU 2026 Workshop",
       "description": "IPIU 2026에서 진행한 워크샵",
       "category": "workshop",

@@ -26,7 +26,7 @@
     },
     {
       "title": "Blind to Position, Biased in Language: Probing Mid-Layer Representational Bias in Vision-Language Encoders for Zero-Shot Language-Grounded Spatial Understanding",
-      "authors": ["Na Min An", "Inha Kang", "Minhyun Lee", "Hyunjung Shim"],
+      "authors": ["Na Min An*", "Inha Kang*", "Minhyun Lee", "Hyunjung Shim"],
       "venue": "ECCV",
       "year": 2026,
       "type": "conference",
@@ -36,7 +36,7 @@
     
     {
       "title": "Dense Reward for Multi-View 3D Reasoning with Global Maps and Local Views",
-      "authors": ["Jiho Choi", "Seonho Lee", "Seojeong Park", "Hyunjung Shim"],
+      "authors": ["Jiho Choi*", "Seonho Lee*", "Seojeong Park", "Hyunjung Shim"],
       "venue": "ECCV",
       "year": 2026,
       "type": "conference",

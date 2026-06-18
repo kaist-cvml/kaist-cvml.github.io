@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "news027",
+      "date": "2026-06-18",
+      "title": "5 Papers Accepted to ECCV 2026",
+      "content": "<strong>5 papers accepted to ECCV 2026</strong>.",
+      "category": "publication",
+      "featured": true,
+      "venue": "ECCV 2026"
+    },
+    {
       "id": "news026",
       "date": "2026-05-01",
       "title": "Paper Accepted to ICML 2026",

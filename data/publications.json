@@ -16,7 +16,7 @@
   "publications": [
     {
       "title": "Representation Alignment for Just Image Transformers is not Easier than You Think",
-      "authors": ["Jaeyo Shin", "Jiwook Kim", "Hyunjung Shim"],
+      "authors": ["Jaeyo Shin*", "Jiwook Kim*", "Hyunjung Shim"],
       "venue": "ECCV",
       "year": 2026,
       "type": "conference",

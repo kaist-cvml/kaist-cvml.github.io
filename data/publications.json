@@ -22,7 +22,7 @@
       "type": "conference",
       "status": "accepted",
       "category": "representation learning",
-      "code": "https://github.com/kaist-cvml/PixelREPA"
+      "code_url": "https://github.com/kaist-cvml/PixelREPA"
     },
     {
       "title": "Blind to Position, Biased in Language: Probing Mid-Layer Representational Bias in Vision-Language Encoders for Zero-Shot Language-Grounded Spatial Understanding",

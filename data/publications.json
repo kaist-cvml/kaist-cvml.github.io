@@ -15,6 +15,53 @@
 
   "publications": [
     {
+      "title": "Representation Alignment for Just Image Transformers is not Easier than You Think",
+      "authors": ["Jaeyo Shin", "Jiwook Kim", "Hyunjung Shim"],
+      "venue": "ECCV",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "category": "representation learning",
+      "code": "https://github.com/kaist-cvml/PixelREPA"
+    },
+    {
+      "title": "Blind to Position, Biased in Language: Probing Mid-Layer Representational Bias in Vision-Language Encoders for Zero-Shot Language-Grounded Spatial Understanding",
+      "authors": ["Na Min An", "Inha Kang", "Minhyun Lee", "Hyunjung Shim"],
+      "venue": "ECCV",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "category": "vision-language"
+      }, 
+    
+    {
+      "title": "Dense Reward for Multi-View 3D Reasoning with Global Maps and Local Views",
+      "authors": ["Jiho Choi", "Seonho Lee", "Seojeong Park", "Hyunjung Shim"],
+      "venue": "ECCV",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "category": "3d reasoning"
+      },
+    {
+      "title": "CoT-PL: Chain-of-Thought Pseudo-Labeling for Open-Vocabulary Object Detection",
+      "authors": ["Hojun Choi", "Youngsun Lim", "Jaeyo Shin", "Hyunjung Shim"],
+      "venue": "ECCV",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "category": "object detection"
+      },
+    {
+      "title": "Open-Vocabulary BEV Segmentation with 3D-Aware Geometric Constraints",
+      "authors": ["Hojun Cho", "Seulbin Hwang", "Dae Jung Kim", "Kisung Kim", "Hyunjung Shi", "Jinhan Lee"],
+      "venue": "ECCV",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "category": "segmentation"
+    },
+    {
       "title": "Mitigating Perceptual Judgment Bias in Multimodal LLM-as-a-Judge via Perceptual Perturbation and Reward Modeling",
       "authors": ["Seojeong Park*", "Jiho Choi*", "Junyong Kang", "Seonho Lee", "Jaeyo Shin", "Hyunjung Shim"],
       "venue": "ICML",

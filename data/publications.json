@@ -54,7 +54,7 @@
       },
     {
       "title": "Open-Vocabulary BEV Segmentation with 3D-Aware Geometric Constraints",
-      "authors": ["Hojun Cho", "Seulbin Hwang", "Dae Jung Kim", "Kisung Kim", "Hyunjung Shi", "Jinhan Lee"],
+      "authors": ["Hojun Choi", "Seulbin Hwang", "Dae Jung Kim", "Kisung Kim", "Hyunjung Shim", "Jinhan Lee"],
       "venue": "ECCV",
       "year": 2026,
       "type": "conference",

@@ -108,7 +108,8 @@
       "email": "hchoi256@kaist.ac.kr",
       "category": "phd",
       "image": "HojunChoi.jpg",
-      "researchInterests": ["Vision-Language Models", "Multimodal"]
+      "researchInterests": ["Vision-Language Models", "Multimodal"],
+      "website": "https://hchoi256.github.io/"
     },
     {
       "name": "Jiwook Kim",

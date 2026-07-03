@@ -126,6 +126,13 @@
       "image": "SuinLee.jpg",
       "researchInterests": ["3D Computer Vision", "3D Generative Models"],
       "website": "https://adios42.github.io/"
+    },
+    {
+      "name": "Juhyeong Lee",
+      "email": "jh9508@naver.com",
+      "category": "intern",
+      "image": "JuhyeongLee.jpg",
+      "researchInterests": ["Vision-Language-Action Models", "Vision-Language Models", "Multimodal"]
     }
   ],
   "alumni": [

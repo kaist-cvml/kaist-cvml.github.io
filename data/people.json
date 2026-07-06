@@ -133,6 +133,19 @@
       "category": "intern",
       "image": "JuhyeongLee.jpg",
       "researchInterests": ["Vision-Language-Action Models", "Vision-Language Models", "Multimodal"]
+    },
+    {
+      "name": "Kyuan Oh",
+      "email": "oka04108@cau.ac.kr",
+      "category": "intern",
+      "researchInterests": ["Vision-Language-Action Models", "Omnimodal AI", "World Models"]
+    },
+    {
+      "name": "Seungjoon Lee",
+      "email": "diplomat3334@khu.ac.kr",
+      "category": "intern",
+      "image": "Seungjoon_Lee.jpg",
+      "researchInterests": ["Vision-Language-Action Models", "Autonomous Driving"]
     }
   ],
   "alumni": [

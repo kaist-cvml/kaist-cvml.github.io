@@ -146,6 +146,13 @@
       "category": "intern",
       "image": "Seungjoon_Lee.jpg",
       "researchInterests": ["Vision-Language-Action Models", "Autonomous Driving"]
+    },
+    {
+      "name": "ByungHyun Jeon",
+      "email": "jbh030312@khu.ac.kr",
+      "category": "intern",
+      "image": "ByungHyunJeon.jpg",
+      "researchInterests": ["3D Reconstruction/Generation", "3D Understanding"]
     }
   ],
   "alumni": [

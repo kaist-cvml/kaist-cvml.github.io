@@ -112,6 +112,13 @@
       "website": "https://hchoi256.github.io/"
     },
     {
+      "name": "Cholmin Kang",
+      "email": "stevekang@kaist.ac.kr",
+      "category": "phd",
+      "image": "CholminKang.png",
+      "researchInterests": ["Computer Vision", "Augmentation", "Style transfer", "Medical AI"]
+    },
+    {
       "name": "Jiwook Kim",
       "email": "tom919@kaist.ac.kr",
       "category": "phd",

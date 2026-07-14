@@ -128,6 +128,13 @@
       "website": "https://adios42.github.io/"
     },
     {
+      "name": "Jeon Youjin",
+      "email": "ngbrjyj@kaist.ac.kr",
+      "category": "phd",
+      "image": "JeonYoujin.jpg",
+      "researchInterests": ["World Models", "Vision Language Action Models", "3D Vision"]
+    },
+    {
       "name": "Cholmin Kang",
       "email": "stevekang@kaist.ac.kr",
       "category": "phd",

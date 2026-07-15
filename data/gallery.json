@@ -6,6 +6,28 @@
   },
   "gallery_items": [
     {
+      "title": "ICML 2026",
+      "description": "ICML 2026 학회 참가",
+      "category": "conferences",
+      "date": "2026-07",
+      "image": "Conference_ICML_2026_Group.jpg",
+      "alt_text": "ICML 2026",
+      "featured": true,
+      "tags": ["icml", "conference"],
+      "venue": "ICML 2026"
+    },
+    {
+      "title": "ICML 2026 Presentation",
+      "description": "ICML 2026 발표 (박서정, 최지호)",
+      "category": "conferences",
+      "date": "2026-07",
+      "image": "Conference_ICML_2026.jpg",
+      "alt_text": "ICML 2026 Presentation",
+      "featured": true,
+      "tags": ["icml", "conference", "presentation"],
+      "venue": "ICML 2026"
+    },
+    {
       "title": "스승의날 홈커밍",
       "description": "교수님 스승의날 홈커밍 행사",
       "category": "lab-life",

@@ -6,6 +6,17 @@
   },
   "gallery_items": [
     {
+      "title": "CVPR 2026",
+      "description": "CVPR 2026 학회 발표 (안나민, 강인하, 윤소연)",
+      "category": "conferences",
+      "date": "2026-06",
+      "image": "Conference_CVPR_2026.jpg",
+      "alt_text": "CVPR 2026",
+      "featured": true,
+      "tags": ["cvpr", "conference"],
+      "venue": "CVPR 2026"
+    },
+    {
       "title": "ICML 2026",
       "description": "ICML 2026 학회 참가",
       "category": "conferences",

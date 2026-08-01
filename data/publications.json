@@ -15,6 +15,19 @@
 
   "publications": [
     {
+      "title": "Are Large Vision-Language Models Ready to Guide Blind and Low-Vision Individuals?",
+      "authors": ["Eunki Kim*", "Na Min An*", "Wan Ju Kang", "Sangryul Kim", "James Thorne", "Hyunjung Shim"],
+      "venue": "COLM",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "keywords": ["Accessible AI", "Multimodal LLM", "Evaluation & Benchmarking"],
+      "category": "multimodal",
+      "pdf_url": "https://arxiv.org/pdf/2510.00766",
+      "code_url": "https://github.com/kaist-cvml/MULTI-TAP",
+      "project_url": "https://kaist-cvml.github.io/multitap/"
+    },
+    {
       "title": "Representation Alignment for Just Image Transformers is not Easier than You Think",
       "authors": ["Jaeyo Shin*", "Jiwook Kim*", "Hyunjung Shim"],
       "venue": "ECCV",
@@ -22,6 +35,7 @@
       "type": "conference",
       "status": "accepted",
       "category": "representation learning",
+      "pdf_url": "https://arxiv.org/pdf/2603.14366",
       "code_url": "https://github.com/kaist-cvml/PixelREPA"
     },
     {
@@ -31,7 +45,10 @@
       "year": 2026,
       "type": "conference",
       "status": "accepted",
-      "category": "vision-language"
+      "keywords": ["Vision-Language Models", "Representational Bias"],
+      "category": "vision-language",
+      "pdf_url": "https://arxiv.org/pdf/2509.23098",
+      "code_url": "https://github.com/kaist-cvml/Biased2Grounded.git"
       }, 
     
     {
@@ -41,7 +58,9 @@
       "year": 2026,
       "type": "conference",
       "status": "accepted",
-      "category": "3d reasoning"
+      "category": "3d reasoning",
+      "pdf_url": "https://arxiv.org/pdf/2606.23557",
+      "code_url": "https://github.com/kaist-cvml/dr-mv3d"
       },
     {
       "title": "CoT-PL: Chain-of-Thought Pseudo-Labeling for Open-Vocabulary Object Detection",
@@ -59,7 +78,8 @@
       "year": 2026,
       "type": "conference",
       "status": "accepted",
-      "category": "segmentation"
+      "category": "segmentation",
+      "pdf_url": "https://arxiv.org/pdf/2606.24353"
     },
     {
       "title": "Mitigating Perceptual Judgment Bias in Multimodal LLM-as-a-Judge via Perceptual Perturbation and Reward Modeling",
@@ -69,7 +89,9 @@
       "type": "conference",
       "status": "accepted",
       "keywords": ["LLM-as-a-Judge", "Multimodal LLM", "Reward Modeling", "Perceptual Bias"],
-      "category": "multimodal"
+      "category": "multimodal",
+      "pdf_url": "https://arxiv.org/pdf/2606.02578",
+      "project_url": "https://perception-judge.github.io/"
     },
     {
       "title": "Boosting Text Encoder for Personalized Text-to-Image Generation",
@@ -103,7 +125,9 @@
       "type": "conference",
       "status": "accepted",
       "keywords": ["Vision-Language Models", "AI Fairness", "Interpretability"],
-      "category": "multimodal"
+      "category": "multimodal",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/An_Interpretable_Debiasing_of_Vision-Language_Models_for_Social_Fairness_CVPR_2026_paper.pdf",
+      "code_url": "https://github.com/namin-an/DeBiasLens"
     },
     {
       "title": "Real-Time Long Horizon Air Quality Forecasting via Group-Relative Policy Optimization",
@@ -127,7 +151,8 @@
       "type": "conference",
       "status": "accepted",
       "keywords": ["Dense Correspondence", "MultiModal"],
-      "category": "3D"
+      "category": "3D",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Yoon_SGSoft_Learning_Fused_Semantic-Geometric_Features_for_3D_Shape_Correspondence_via_CVPR_2026_paper.pdf",
     },
 
     {
@@ -137,8 +162,9 @@
       "year": 2026,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Vision-Language Models", "Benchmark and Evalutaion", "Cultural Awareness"],
-      "category": "multimodal"
+      "keywords": ["Cultural Awareness", "Vision-Language Models", "Evaluation & Benchmarking"],
+      "category": "multimodal",
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Kim_World_in_a_Frame_Understanding_Culture_Mixing_as_a_New_CVPR_2026_paper.pdf"
     },
     {
       "title": "What 'Not' to Detect: Negation-Aware VLMs via Structured Reasoning and Token Merging",
@@ -226,12 +252,11 @@
       "type": "conference",
       "status": "accepted",
       "presentation": "Outstanding paper",
-      "keywords": ["Multimodal Learning", "Embeddings", "Cross-Modal", "Modality Gap"],
-      "category": "nlp",
+      "keywords": ["Multimodal Representation", "Vision-Language Models"],
+      "category": "multimodal",
       "pdf_url": "https://aclanthology.org/2025.acl-long.1319/",
       "code_url": "https://github.com/xfactlab/I0T/tree/main",
       "project_url": "https://kaist-cvml.github.io/i0t",
-      "category": "ml"
     },
     {
       "title": "Fine-Grained Image-Text Correspondence with Cost Aggregation for Open-Vocabulary Part Segmentation",

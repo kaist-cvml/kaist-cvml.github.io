@@ -3,6 +3,15 @@
     {
       "id": "news027",
       "date": "2026-06-18",
+      "title": "VLGuide Accepted to COLM 2026",
+      "content": "The paper \"<strong>Are Large Vision-Language Models Ready to Guide Blind and Low-Vision Individuals?</strong>\" is accepted to <strong>COLM 2026</strong>.",
+      "category": "publication",
+      "featured": true,
+      "venue": "COLM 2026"
+    },
+    {
+      "id": "news027",
+      "date": "2026-06-18",
       "title": "5 Papers Accepted to ECCV 2026",
       "content": "<strong>5 papers accepted to ECCV 2026</strong>.",
       "category": "publication",

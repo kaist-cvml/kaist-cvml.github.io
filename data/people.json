@@ -17,7 +17,7 @@
       "email": "julia19@kaist.ac.kr",
       "category": "phd",
       "image": "NahyeonPark.jpg",
-      "researchInterests": ["Generative models"],
+      "researchInterests": ["Generative Models"],
       "website": "https://nahyeonkaty.github.io"
     },
     {
@@ -25,7 +25,7 @@
       "email": "naminan@kaist.ac.kr",
       "category": "phd",
       "image": "NaminAn.png",
-      "researchInterests": ["Generative models"],
+      "researchInterests": ["Multimodal Models"],
       "website": "https://namin-an.github.io/"
     },
     {
@@ -57,7 +57,7 @@
       "email": "jykang@kaist.ac.kr",
       "category": "phd",
       "image": "JunyongKang.jpg",
-      "researchInterests": ["Representation learning", "Explainable AI"],
+      "researchInterests": ["Representation Learning", "Explainable AI"],
       "website": "https://sites.google.com/view/junyongkang/home"
     },
     {

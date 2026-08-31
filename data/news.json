@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "news029",
+      "date": "2026-08-31",
+      "title": "WaymoQA Accepted to EMNLP 2026 Findings",
+      "content": "The paper \"<strong>WaymoQA: A Multi-View Visual Question Answering Dataset for Safety-Critical Reasoning in Autonomous Driving</strong>\" is accepted to <strong>EMNLP 2026 Findings</strong>.",
+      "category": "publication",
+      "featured": true,
+      "venue": "EMNLP 2026 Findings"
+    },
+    {
       "id": "news028",
       "date": "2026-07-09",
       "title": "VLGuide Accepted to COLM 2026",

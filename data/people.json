@@ -61,13 +61,6 @@
       "website": "https://sites.google.com/view/junyongkang/home"
     },
     {
-      "name": "Jaeyo Shin",
-      "email": "jaeyo_shin@kaist.ac.kr",
-      "category": "masters",
-      "image": "JaeyoShin.jpg",
-      "researchInterests": ["3D Understanding", "Generative Models"]
-    },
-    {
       "name": "Inha Kang",
       "email": "rkswlsj13@kaist.ac.kr",
       "category": "phd",
@@ -140,6 +133,13 @@
       "category": "phd",
       "image": "CholminKang.png",
       "researchInterests": ["Computer Vision", "Augmentation", "Style transfer", "Medical AI"]
+    },
+    {
+      "name": "Jaeyo Shin",
+      "email": "jaeyo_shin@kaist.ac.kr",
+      "category": "phd",
+      "image": "JaeyoShin.jpg",
+      "researchInterests": ["3D Understanding", "Generative Models"]
     },
     {
       "name": "Juhyeong Lee",

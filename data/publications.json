@@ -15,6 +15,19 @@
 
   "publications": [
     {
+      "title": "WaymoQA: A Multi-View Visual Question Answering Dataset for Safety-Critical Reasoning in Autonomous Driving",
+      "authors": ["Seungjun Yu", "Seonho Lee", "Namho Kim", "Jaeyo Shin", "Junsung Park", "Wonjeong Ryu", "Raehyuk Jung", "Hyunjung Shim"],
+      "venue": "EMNLP",
+      "presentation": "Findings",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "keywords": ["Visual Question Answering", "Autonomous Driving", "Multi-View Reasoning"],
+      "category": "multimodal",
+      "pdf_url": "https://arxiv.org/abs/2511.20022",
+      "code_url": "https://github.com/sjyu001/WaymoQA"
+    },
+    {
       "title": "Are Large Vision-Language Models Ready to Guide Blind and Low-Vision Individuals?",
       "authors": ["Eunki Kim*", "Na Min An*", "Wan Ju Kang", "Sangryul Kim", "James Thorne", "Hyunjung Shim"],
       "venue": "COLM",

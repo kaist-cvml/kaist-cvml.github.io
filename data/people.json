@@ -97,6 +97,14 @@
       "researchInterests": ["3D Computer Vision"]
     },
     {
+      "name": "Debjyoti Mondal",
+      "email": "deb.kit2@kaist.ac.kr",
+      "category": "masters",
+      "image": "Deb.jpg",
+      "researchInterests": ["Graph Neural Networks", "Representation Learning"],
+      "website": "https://deb-kit2.github.io"
+    },
+    {
       "name": "Hojun Choi",
       "email": "hchoi256@kaist.ac.kr",
       "category": "phd",

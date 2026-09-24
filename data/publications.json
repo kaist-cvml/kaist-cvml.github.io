@@ -15,6 +15,18 @@
 
   "publications": [
     {
+      "title": "Grounding Driving VLA via Inverse Kinematics",
+      "authors": ["Junsung Park", "Hyunjung Shim"],
+      "venue": "NeurIPS",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "keywords": ["Autonomous Driving", "End-to-end Driving", "Multimodality"],
+      "category": "multimodal",
+      "pdf_url": "https://arxiv.org/pdf/2605.21061",
+      "code_url": "https://github.com/engineerJPark/"
+    },
+    {
       "title": "WaymoQA: A Multi-View Visual Question Answering Dataset for Safety-Critical Reasoning in Autonomous Driving",
       "authors": ["Seungjun Yu", "Seonho Lee", "Namho Kim", "Jaeyo Shin", "Junsung Park", "Wonjeong Ryu", "Raehyuk Jung", "Hyunjung Shim"],
       "venue": "EMNLP",

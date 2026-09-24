@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "news030",
+      "date": "2026-09-25",
+      "title": "'Grounding Driving VLA via Inverse Kinematics' Accepted to NeurIPS 2026",
+      "content": "The paper \"<strong>Grounding Driving VLA via Inverse Kinematics</strong>\" is accepted to <strong>NeurIPS 2026</strong>.",
+      "category": "publication",
+      "featured": true,
+      "venue": "NeurIPS 2026"
+    },
+    {
       "id": "news029",
       "date": "2026-08-31",
       "title": "WaymoQA Accepted to EMNLP 2026 Findings",

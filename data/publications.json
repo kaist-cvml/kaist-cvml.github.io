@@ -24,7 +24,7 @@
       "keywords": ["Autonomous Driving", "End-to-end Driving", "Multimodality"],
       "category": "multimodal",
       "pdf_url": "https://arxiv.org/pdf/2605.21061",
-      "code_url": "https://github.com/engineerJPark/"
+      "code_url": "https://github.com/engineerJPark/DriveIK"
     },
     {
       "title": "WaymoQA: A Multi-View Visual Question Answering Dataset for Safety-Critical Reasoning in Autonomous Driving",

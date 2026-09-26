@@ -15,6 +15,16 @@
 
   "publications": [
     {
+      "title": "Keep It CALM: Analyzing the Limits of Global Unsafety in Text-to-Image Generation",
+      "authors": ["NaHyeon Park", "Minhyun Lee", "Hyunjung Shim"],
+      "venue": "NeurIPS",
+      "year": 2026,
+      "type": "conference",
+      "status": "accepted",
+      "keywords": ["Text-to-Image Generation", "Safety"],
+      "category": "ml"
+    },
+    {
       "title": "Grounding Driving VLA via Inverse Kinematics",
       "authors": ["Junsung Park", "Hyunjung Shim"],
       "venue": "NeurIPS",

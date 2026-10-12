@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "news031",
+      "date": "2026-10-12",
+      "title": "Junsung Park has been selected as a Top Reviewer for the NeurIPS 2026 Main Track.",
+      "content": "<strong>Junsung Park has been selected as a Top Reviewer for the NeurIPS 2026 Main Track.</strong>.",
+      "category": "award",
+      "featured": true,
+      "venue": "NeurIPS 2026"
+    },
+    {
       "id": "news030",
       "date": "2026-09-25",
       "title": "2 Papers Accepted to NeurIPS 2026",

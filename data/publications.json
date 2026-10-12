@@ -31,8 +31,8 @@
       "year": 2026,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Autonomous Driving", "End-to-end Driving", "Multimodality"],
-      "category": "multimodal",
+      "keywords": ["Autonomous Driving", "End-to-end Driving", "VLA", "World Model"],
+      "category": "vision-language-action model",
       "pdf_url": "https://arxiv.org/pdf/2605.21061",
       "code_url": "https://github.com/engineerJPark/DriveIK"
     },

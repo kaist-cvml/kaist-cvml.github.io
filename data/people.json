@@ -150,26 +150,12 @@
       "researchInterests": ["3D Understanding", "Generative Models"]
     },
     {
-      "name": "Juhyeong Lee",
-      "email": "jh9508@naver.com",
-      "category": "intern",
-      "image": "JuhyeongLee.jpg",
-      "researchInterests": ["Vision-Language-Action Models", "Vision-Language Models", "Multimodal"]
-    },
-    {
       "name": "Kyuan Oh",
       "email": "oka04108@cau.ac.kr",
       "category": "intern",
       "image": "KyuanOh.png",
       "researchInterests": ["Vision-Language-Action Models", "Omnimodal AI", "World Models"],
       "website": "https://kyuanoh.github.io/"
-    },
-    {
-      "name": "Seungjoon Lee",
-      "email": "diplomat3334@khu.ac.kr",
-      "category": "intern",
-      "image": "Seungjoon_Lee.jpg",
-      "researchInterests": ["Vision-Language-Action Models", "Autonomous Driving"]
     },
     {
       "name": "ByungHyun Jeon",

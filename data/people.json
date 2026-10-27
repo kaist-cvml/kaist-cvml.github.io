@@ -177,6 +177,14 @@
       "category": "intern",
       "image": "ByungHyunJeon.jpg",
       "researchInterests": ["3D Reconstruction/Generation", "3D Understanding"]
+    },
+    {
+      "name": "Yoonhyung Park",
+      "email": "pyoon820@gmail.com",
+      "category": "intern",
+      "image": "yoonhyungpark.jpg",
+      "researchInterests": ["Multimodal Models", "Tactile Sensing", "Embodied AI"],
+      "website": "https://hello820820.github.io/"
     }
   ],
   "alumni": [
